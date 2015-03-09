@@ -49,3 +49,12 @@ body {
 .content.active {
   display: block;
 }
+.generate-options {
+  float: left;
+}
+.wordlist-description {
+  color: #666666;
+  font-style: italic;
+  font-size: 13px;
+  text-align: right;
+}
