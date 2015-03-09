@@ -1,5 +1,17 @@
 {
   "name": "passphrases",
+  "main": "html/index.html",
+  "windows": {
+    "title": "Passphrases",
+    "icon": "logo-icon.png",
+    "toolbar": false,
+    "width": 600,
+    "height": 350,
+    "min_width": 600,
+    "min_height": 350,
+    "max_width": 600,
+    "max_height": 350
+  },
   "version": "0.0.1",
   "private": true,
   "dependencies": {
