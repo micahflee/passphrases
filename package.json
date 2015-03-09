@@ -1,7 +1,7 @@
 {
   "name": "passphrases",
   "main": "html/index.html",
-  "windows": {
+  "window": {
     "title": "Passphrases",
     "icon": "logo-icon.png",
     "toolbar": false,
