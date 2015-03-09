@@ -3,5 +3,6 @@
   "version": "0.0.1",
   "private": true,
   "dependencies": {
+    "nw": "^0.12.0"
   }
 }
