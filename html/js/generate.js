@@ -45,9 +45,10 @@ $(function(){
 
         loadCount++;
         if(loadCount == wordlistCount) {
+
           // all wordlists have been loaded, populate dropdown
           populateWordlistsDropdown();
-          updateWordlistNote();
+          update();
         }
       }
     });
@@ -60,8 +61,11 @@ $(function(){
     $('select.words').append($option);
   }
 
-  // wordlist note
-  function updateWordlistNote() {
+  // update each time options change
+  function update() {
+    generatePassphrase();
+
+    // update the note
     var selectedWordlist = $('select.wordlists').val(),
       selectedWords = $('select.words').val(),
       wordlistCount = wordlists[selectedWordlist].count;
@@ -101,8 +105,28 @@ $(function(){
       Math.round(val * 10) / 10 + ' ' + unit + ' average at one trillion guesses per second'
     );
   }
+  $('select.wordlists').change(update);
+  $('select.words').change(update);
 
-  $('select.wordlists').change(updateWordlistNote);
-  $('select.words').change(updateWordlistNote);
+  // generate a passphrase
+  function generatePassphrase() {
+    var selectedWordlist = $('select.wordlists').val(),
+      selectedWords = $('select.words').val(),
+      wordlistCount = wordlists[selectedWordlist].count;
+
+      var random = new Random();
+      var passphrase = '';
+      for(var i = 0; i < selectedWords; i++) {
+        passphrase += wordlists[selectedWordlist].wordlist[random.integer(0, wordlistCount - 1)];
+        if(i < selectedWords - 1) { passphrase += ' '; }
+      }
+
+      $('.passphrase').html(passphrase);
+  }
+
+  $('.button-generate').click(generatePassphrase);
+  $('.button-memorize').click(function(){
+    Passphrases.memorize();
+  });
 
 });

@@ -58,6 +58,11 @@ $(function(){
     $(this).removeClass('hover');
   });
 
+  // let the outside world switch to memorize tab
+  Passphrases.memorize = function(){
+    clickMemorizeTab();
+  };
+
   // start with generate
   clickGenerateTab();
 });
