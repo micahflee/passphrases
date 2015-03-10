@@ -4,6 +4,11 @@ body {
   padding: 0;
 }
 
+a {
+  color: #cc0000;
+  text-decoration: none;
+}
+
 .wrapper {
   color: #000000;
   font-family: 'Open Sans', sans-serif;
@@ -29,7 +34,7 @@ body {
   cursor: pointer;
   font-weight: bold;
   color: #cccccc;
-  font-size: 20px;
+  font-size: 15px;
 }
 .navigation .tab.hover {
   color: #ffffff;
@@ -58,15 +63,23 @@ body {
   font-size: 14px;
   text-align: right;
 }
-.passphrase {
+
+.passphrase-wrapper {
   margin: 20px 0;
-  text-align: center;
-  font-size: 25px;
-  font-weight: bold;
   background-color: #ffffff;
   padding: 5px;
   border: 1px solid #999999;
+  height: 70px;
 }
+.passphrase {
+  text-align: center;
+  font-size: 25px;
+  font-weight: bold;
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
 .buttons {
   text-align: center;
 }
@@ -98,4 +111,12 @@ body {
   background-image: -o-linear-gradient(top, #3cb0fd, #3498db);
   background-image: linear-gradient(to bottom, #3cb0fd, #3498db);
   text-decoration: none;
+}
+
+.about-license {
+  font-family: sans-serif;
+  font-style: italic;
+  font-size: 13px;
+  color: #666666;
+  margin-top: 40px;
 }
