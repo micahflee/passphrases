@@ -11,6 +11,7 @@
     <script src="js/common.js"></script>
     <script src="js/tabs.js"></script>
     <script src="js/generate.js"></script>
+    <script src="js/memorize.js"></script>
   </head>
 
   <body>
@@ -43,7 +44,18 @@
 
         <!-- memorize -->
         <div class="content content-memorize">
-          <p>memorize</p>
+          <div class="memorize-input">
+            <p>Type in passphrase to start memorizing:</p>
+            <p>
+              <input type="text" class="passphrase-to-memorize" />
+            </p>
+            <div class="buttons">
+              <div class="btn button-start-memorizing">Start Memorizing</div>
+            </div>
+          </div>
+          <div class="memorize-go">
+            Memorizing in action...
+          </div>
         </div>
 
         <!-- about -->
