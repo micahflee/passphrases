@@ -84,12 +84,68 @@ a {
   text-align: center;
   font-size: 20px;
 }
-.passphrase-to-memorize {
+.memorize-stats {
+  text-align: center;
+  margin-bottom: 20px;
+}
+.memorize-stat {
+  display: inline-block;
+  margin: 0 20px;
+}
+.memorize-successes {
+  font-weight: bold;
+  color: #009900;
+}
+.memorize-fails {
+  font-weight: bold;
+  color: #990000;
+}
+
+.passphrase-to-memorize, .passphrase-test {
   font-size: 20px;
   font-family: 'Open Sans', sans-serif;
   font-weight: bold;
   padding: 15px;
   width: 500px;
+  background-color: #ffffff;
+}
+.typo {
+  background-color: #ffcccc;
+}
+
+.memorize-go {
+  text-align: center;
+}
+.hint {
+  height: 20px;
+}
+.hint-progress-wrapper {
+  width: 100%;
+  height: 20px;
+  background-color: #666666;
+  border: 2px solid #666666;
+}
+.hint-progress {
+  width: 0%;
+  height: 20px;
+  background-color: #66ff66;
+}
+.hint-show {
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+  font-weight: bold;
+  font-size: 15px;
+  color: #000000;
+  text-align: center;
+}
+
+.about-license {
+  font-family: sans-serif;
+  font-style: italic;
+  font-size: 13px;
+  color: #666666;
+  margin-top: 40px;
 }
 
 .buttons {
@@ -123,12 +179,4 @@ a {
   background-image: -o-linear-gradient(top, #3cb0fd, #3498db);
   background-image: linear-gradient(to bottom, #3cb0fd, #3498db);
   text-decoration: none;
-}
-
-.about-license {
-  font-family: sans-serif;
-  font-style: italic;
-  font-size: 13px;
-  color: #666666;
-  margin-top: 40px;
 }
