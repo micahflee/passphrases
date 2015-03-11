@@ -79,8 +79,6 @@ $(function(){
     var seconds = (keyspace / 2) / guessesPerSecond;
     var years = seconds /  60 / 60 / 24 / 365;
 
-    console.log('years: ' + years);
-
     var val, unit;
     if(years >= 1000000000000000) {
       val = years / 1000000000000000;
