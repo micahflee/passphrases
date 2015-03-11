@@ -91,9 +91,6 @@ $(function(){
     } else if(years >= 1000) {
       val = years / 1000;
       unit = 'thousand years'
-    } else if(years >= 100) {
-      val = years / 100;
-      unit = 'hundred years'
     } else {
       val = years;
       unit = 'years'

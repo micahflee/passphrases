@@ -56,12 +56,13 @@ a {
 }
 .generate-options {
   float: left;
+  text-align: center;
 }
 .wordlist-description {
   color: #666666;
   font-style: italic;
   font-size: 14px;
-  text-align: right;
+  text-align: center;
 }
 
 .passphrase-wrapper {
