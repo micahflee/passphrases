@@ -31,7 +31,9 @@ $(function(){
       } else if(tries == 1) {
         $('.memorize-note').html('Try to type the passphrase before the hint appears');
       } else if(typedWithoutLooking && tries < 10) {
-        $('.memorize-note').html('Good job! Try making it to 10 tries.');
+        $('.memorize-note').html('Good job! Try making it to 10 tries');
+      } else if(typedWithoutLooking && tries < 15) {
+        $('.memorize-note').html('Try making it to 15 tries without seeing what you type');
       } else if(typedWithoutLooking) {
         $('.memorize-note').html('Keep practicing');
       }
@@ -160,11 +162,11 @@ $(function(){
         updateStats();
 
         // after 10 tries, change from text field to password field
-        if(tries == 5) {
+        if(tries == 10) {
           $('.passphrase-test').attr('type', 'password');
         }
 
-        if(tries < 10) {
+        if(tries < 15) {
           nextTry();
         } else {
           if(typedWithoutLooking) {
