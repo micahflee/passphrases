@@ -56,22 +56,29 @@
 
           <div class="memorize-go">
             <div class="memorize-stats">
-              <div class="memorize-stat">Successes: <span class="memorize-successes"></span></div>
-              <div class="memorize-stat">Fails: <span class="memorize-fails"></span></div>
+              <div class="memorize-note"></div>
+              <div class="memorize-stat">Tries: <span class="memorize-tries"></span></div>
             </div>
 
-            <div class="hint">
-              <div class="hint-progress-wrapper"><div class="hint-progress"></div></div>
-              <div class="hint-show"></div>
+            <div class="memorize-active">
+              <div class="hint">
+                <div class="hint-progress-wrapper"><div class="hint-progress"></div></div>
+                <div class="hint-show"></div>
+              </div>
+
+              <p>
+                <input type="text" class="passphrase-test" />
+              </p>
             </div>
 
-            <p>
-              <input type="text" class="passphrase-test" />
-            </p>
+            <div class="memorize-waiting">
+            </div>
 
             <div class="buttons">
               <div class="btn button-cancel">Cancel</div>
             </div>
+
+            <p class="memorize-warning">If you haven't memorized your passphrase, <strong>don't close this window</strong> without writing it down first. This program won't save it for you.</p>
           </div>
         </div>
 

@@ -59,7 +59,7 @@ $(function(){
   });
 
   // let the outside world switch to memorize tab
-  Passphrases.memorize = function(){
+  Passphrases.tabMemorize = function(){
     clickMemorizeTab();
   };
 

@@ -123,7 +123,9 @@ $(function(){
 
   $('.button-generate').click(generatePassphrase);
   $('.button-memorize').click(function(){
-    Passphrases.memorize();
+    var passphrase = $('.passphrase').html();
+    Passphrases.tabMemorize();
+    Passphrases.memorizeStart(passphrase);
   });
 
 });
