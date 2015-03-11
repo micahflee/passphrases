@@ -17,7 +17,7 @@ $(function(){
 
     var delay = 0;
     var tries = 0;
-    $('.hint-show').html(passphrase);
+    $('.hint-show').text(passphrase);
 
     var typedWithoutLooking = false;
 
