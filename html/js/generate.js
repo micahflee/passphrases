@@ -74,26 +74,29 @@ $(function(){
     var bitsOfEntropy = Math.log2(wordlistCount) * selectedWords;
 
     // calculate average time to guess at 1 trillion guesses/sec
-    var keyspace = Math.pow(wordlistCount, selectedWords),
-      guessesPerSecond = 1000000000,
-      guessesPerYear = guessesPerSecond * 60 * 60 * 24 * 365,
-      years = (keyspace / 2) / guessesPerYear,
-      val, unit;
-    if(years >= 1000000000000) {
+    var keyspace = Math.pow(wordlistCount, selectedWords);
+    var guessesPerSecond = 1000000000;
+    var seconds = (keyspace / 2) / guessesPerSecond;
+    var years = seconds /  60 / 60 / 24 / 365;
+
+    console.log('years: ' + years);
+
+    var val, unit;
+    if(years >= 1000000000000000) {
+      val = years / 1000000000000000;
+      unit = 'trillion years';
+    } else if(years >= 1000000000000) {
       val = years / 1000000000000;
-      unit = 'trillion years'
+      unit = 'billion years';
     } else if(years >= 1000000000) {
       val = years / 1000000000;
-      unit = 'billion years'
+      unit = 'million years';
     } else if(years >= 1000000) {
       val = years / 1000000;
-      unit = 'million years'
-    } else if(years >= 1000) {
-      val = years / 1000;
-      unit = 'thousand years'
+      unit = 'thousand years';
     } else {
       val = years;
-      unit = 'years'
+      unit = 'years';
     }
 
     $('.wordlist-description').html(
