@@ -141,8 +141,21 @@ a {
   font-size: 14px;
   color: #666666;
 }
-.memorize-go .buttons {
+.memorize-go .cancel-wrapper {
   float: right;
+}
+
+.countdown {
+  text-align: center;
+  font-size: 40px;
+  font-weight: bold;
+}
+
+.memorize-ready {
+  text-align: center;
+  font-size: 30px;
+  font-weight: bold;
+  padding: 15px 0;
 }
 
 .about-license {

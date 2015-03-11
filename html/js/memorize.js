@@ -8,6 +8,11 @@ $(function(){
     // switch from input mode to go mode
     $('.memorize-input').hide();
     $('.memorize-go').show();
+
+    $('.memorize-active').show();
+    $('.memorize-waiting').hide();
+    $('.memorize-ready').hide();
+
     $('.passphrase-test').attr('type', 'text');
 
     var delay = 0;
@@ -15,6 +20,10 @@ $(function(){
     $('.hint-show').html(passphrase);
 
     var typedWithoutLooking = false;
+
+    // countdown values are in seconds
+    var countdownValues = [60, 120, 300, 600, 1800, 3600];
+    var currentCountdown = 0;
 
     function updateStats() {
       if(tries == 0) {
@@ -37,6 +46,11 @@ $(function(){
       $('.hint-progress-wrapper').show();
       $('.hint-show').hide();
 
+      // show active, hide waiting
+      $('.memorize-active').show();
+      $('.memorize-waiting').hide();
+      $('.memorize-ready').hide();
+
       // reset the passphrase
       $('.passphrase-test').val('').focus();
 
@@ -45,6 +59,72 @@ $(function(){
         // delay is up, show the hint
         $('.hint-progress-wrapper').hide();
         $('.hint-show').show();
+      });
+    }
+
+    function countdownComplete(countdownInterval) {
+      // stop the timer
+      clearInterval(countdownInterval);
+
+      // remove the click handler for skip button
+      $('.button-skip-countdown').unbind('click');
+
+      // display ready
+      $('.memorize-active').hide();
+      $('.memorize-waiting').hide();
+      $('.memorize-ready').show();
+
+      // wait for space presses
+      $('.passphrase-test').blur();
+      $(window).keypress(function(e) {
+        if (e.keyCode == 0 || e.keyCode == 32) {
+          $(window).unbind('keypress');
+          nextTry();
+          return false;
+        }
+      });
+
+      // todo: notification
+    }
+
+    function countdown() {
+      typedWithoutLooking = false;
+
+      // show waiting, hide active
+      $('.memorize-active').hide();
+      $('.memorize-waiting').show();
+      $('.memorize-ready').hide();
+      $('.memorize-note').html('Give your mind a rest');
+
+      // how many seconds do we wait?
+      var total_seconds = countdownValues[currentCountdown];
+
+      // update the countdown each second
+      function updateCountdown(){
+        var seconds = total_seconds % 60;
+        if(seconds < 10) seconds = '0' + seconds;
+        var minutes = Math.floor(total_seconds / 60);
+        $('.countdown').html(minutes + ':' + seconds);
+      }
+      updateCountdown();
+
+      var countdownInterval = setInterval(function(){
+        updateCountdown();
+
+        // decrease the seconds
+        total_seconds--;
+        if(total_seconds < 0) {
+          // countdown complete, move on to the next countdown
+          if(currentCountdown < countdownValues.length - 1)
+            currentCountdown++;
+
+          countdownComplete(countdownInterval);
+        }
+      }, 1000);
+
+      // skip button
+      $('.button-skip-countdown').click(function(){
+        countdownComplete(countdownInterval);
       });
     }
 
@@ -74,21 +154,24 @@ $(function(){
 
         // increase delay, if needed
         if(delay <= 10)
-          delay += 2;
+          delay++;
 
         // update stats
         updateStats();
 
         // after 10 tries, change from text field to password field
-        if(tries == 11) {
+        if(tries == 5) {
           $('.passphrase-test').attr('type', 'password');
         }
 
-        if(tries < 11) {
+        if(tries < 10) {
           nextTry();
         } else {
-          // todo: set a 10 minute delay
-          nextTry();
+          if(typedWithoutLooking) {
+            countdown();
+          } else {
+            nextTry();
+          }
         }
       }
       // check for typo
@@ -128,6 +211,9 @@ $(function(){
     // switch from go mode to input mode
     $('.memorize-input').show();
     $('.memorize-go').hide();
+
+    // stop listening for space keypress
+    $(window).unbind('keypress');
   });
 
   // let the outside world start memorizing a passphrase
