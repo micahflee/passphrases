@@ -102,6 +102,8 @@ $(function(){
           return false;
         }
       });
+
+      $('.memorize-note').html('Keep practicing');
     }
 
     function countdown() {
