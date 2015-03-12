@@ -1,9 +1,9 @@
 {
   "name": "passphrases",
-  "main": "html/index.html",
+  "main": "./index.html",
   "window": {
     "title": "Passphrases",
-    "icon": "logo-icon.png",
+    "icon": "./images/icon.png",
     "toolbar": false,
     "width": 600,
     "height": 300,
@@ -16,5 +16,9 @@
   "private": true,
   "dependencies": {
     "nw": "^0.12.0"
+  },
+  "devDependencies": {
+    "grunt": "^0.4.5",
+    "grunt-node-webkit-builder": "^1.0.2"
   }
 }

@@ -2,9 +2,6 @@
 
 A tool to generate and help memorize cryptographically secure passphrases.
 
-## Quick Start
+## Build Instructions
 
-```sh
-npm install
-node_modules/nw/bin/nw
-```
+Install node.js and npm. 
