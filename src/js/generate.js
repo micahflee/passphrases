@@ -62,6 +62,12 @@ $(function(){
       if(loadCount == wordlistCount) {
         // all wordlists have been loaded, populate dropdown
         populateWordlistsDropdown();
+
+        // select wordlist and words from prefs
+        $('select.wordlists option[value="' + Passphrases.prefs.wordlist + '"]').prop('selected', true);
+        $('select.words option[value="' + Passphrases.prefs.words + '"]').prop('selected', true);
+
+        // update the generate screen
         update();
       }
     })
@@ -76,6 +82,12 @@ $(function(){
 
   // update each time options change
   function update() {
+    // save option changes
+    Passphrases.prefs.wordlist = $('select.wordlists').val();
+    Passphrases.prefs.words = $('select.words').val();
+    Passphrases.savePrefs();
+
+    // generate a new passphrase
     generatePassphrase();
 
     // update the note

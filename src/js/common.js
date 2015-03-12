@@ -15,7 +15,9 @@ You should have received a copy of the GNU General Public License
 along with this program.  If not, see <http://www.gnu.org/licenses/>.
 */
 
+var fs = require('fs');
 var $ = require('jquery');
+
 var gui = require('nw.gui');
 var win = gui.Window.get();
 
@@ -44,6 +46,54 @@ Passphrases.notify = function(message) {
     setTimeout(function() {notification.close();}, 3000);
   }
 }
+
+// define default preferences
+Passphrases.prefs = {
+  sound: true,
+  wordlist: "securedrop",
+  words: 7
+};
+
+function getPrefsDirname() {
+  var dirname;
+  if(process.platform == 'linux') {
+    dirname = process.env.HOME + '/.config/Passphrases'
+  } else if(process.platform == 'darwin') {
+    dirname = process.env.HOME + '/Library/Application Support/Passphrases'
+  } else if(process.platform == 'win32') {
+    dirname = process.env.APPDATA + '\\\\Passphrases'
+  }
+  return dirname;
+}
+function getPrefsFilename() {
+  if(process.platform == 'win32') {
+    return getPrefsDirname() + '\\\\passphrases.conf';
+  } else {
+    return getPrefsDirname() + '/passphrases.conf';
+  }
+}
+
+function loadPrefs(callback) {
+  try {
+    data = fs.readFileSync(getPrefsFilename(), { encoding: 'utf8' });
+    Passphrases.prefs = JSON.parse(data);
+    callback();
+  } catch(e) {
+    Passphrases.savePrefs(callback);
+  }
+}
+Passphrases.savePrefs = function(callback) {
+  // create the prefs dir, if it's not already created
+  try {
+    fs.mkdirSync(getPrefsDirname());
+  } catch(e) {}
+
+  // save preferences
+  fs.writeFile(getPrefsFilename(), JSON.stringify(Passphrases.prefs), function(err){
+    if(callback) callback(err);
+  })
+}
+loadPrefs();
 
 $(function(){
   // make all links open in external browser
