@@ -17,7 +17,7 @@ npm install
 To run the app while developing:
 
 ```sh
-node_modules/.bin/nwbuild -r .
+node_modules/.bin/nwbuild -r src
 ```
 
 To build binaries for OSX and Windows:
