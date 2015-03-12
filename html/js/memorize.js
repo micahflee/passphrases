@@ -102,8 +102,6 @@ $(function(){
           return false;
         }
       });
-
-      // todo: notification
     }
 
     function countdown() {
@@ -137,6 +135,9 @@ $(function(){
           if(currentCountdown < countdownValues.length - 1)
             currentCountdown++;
 
+          // notification
+          Passphrases.soundEffects['notification'].play();
+
           countdownComplete(countdownInterval);
         }
       }, 1000);
@@ -153,13 +154,18 @@ $(function(){
 
       // have we achieved success?
       if(passphraseTest == passphrase) {
+        // success
+        tries++;
+
+        // play success sound effect
+        if(typedWithoutLooking) {
+          Passphrases.soundEffects['success'].play();
+        }
+
         // is the animation still happening?
         if($('.hint-progress').is(':animated')) {
           typedWithoutLooking = true;
         }
-
-        // success
-        tries++;
 
         // 2nd try has a 5 second delay
         if(tries == 1) {

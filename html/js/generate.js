@@ -125,6 +125,9 @@ $(function(){
 
   // generate a passphrase
   function generatePassphrase() {
+    // play dice roll sound effect
+    Passphrases.soundEffects['generate'].play();
+
     var selectedWordlist = $('select.wordlists').val(),
       selectedWords = $('select.words').val(),
       wordlistCount = wordlists[selectedWordlist].count;

@@ -17,6 +17,13 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
 Passphrases = {};
 
+// load sound effects
+Passphrases.soundEffects = {
+  'generate': new Audio("sounds/dice.ogg"),
+  'success': new Audio("sounds/success.ogg"),
+  'notification': new Audio("sounds/notification.ogg"),
+};
+
 $(function(){
   var gui = require('nw.gui');
 
