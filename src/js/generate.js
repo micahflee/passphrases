@@ -15,6 +15,10 @@ You should have received a copy of the GNU General Public License
 along with this program.  If not, see <http://www.gnu.org/licenses/>.
 */
 
+var $ = require('jquery'),
+  Random = require('random-js'),
+  fs = require('fs');
+
 $(function(){
   // load the wordlists
   var wordlists = {
@@ -44,31 +48,23 @@ $(function(){
   $.each(wordlists, function(wordlist){
     console.log('Loading wordlist', wordlists[wordlist]);
 
-    $.ajax({
-      url: 'wordlists/' + wordlist + '.wordlist',
-      type: 'get',
-      error: function(jqXHR, textStatus, errorThrown) {
-        console.log('Error loading word list ' + textStatus, errorThrown);
-      },
-      success: function(data, textStatus, jqXHR) {
-        if(!data) {
-          console.log('Error, no data');
-          return;
-        }
-
-        wordlists[wordlist].wordlist = data.split('\n');
-        wordlists[wordlist].wordlist.pop(); // remove the trailing blank item
-        wordlists[wordlist].count = wordlists[wordlist].wordlist.length;
-
-        loadCount++;
-        if(loadCount == wordlistCount) {
-
-          // all wordlists have been loaded, populate dropdown
-          populateWordlistsDropdown();
-          update();
-        }
+    fs.readFile('wordlists/' + wordlist + '.wordlist', { encoding: 'utf8' }, function(err, data){
+      if(err) {
+        console.log('Error loading word list', err);
+        return;
       }
-    });
+
+      wordlists[wordlist].wordlist = data.split('\n');
+      wordlists[wordlist].wordlist.pop(); // remove the trailing blank item
+      wordlists[wordlist].count = wordlists[wordlist].wordlist.length;
+
+      loadCount++;
+      if(loadCount == wordlistCount) {
+        // all wordlists have been loaded, populate dropdown
+        populateWordlistsDropdown();
+        update();
+      }
+    })
   });
 
   // populate the words dropdown, from 3 to 10

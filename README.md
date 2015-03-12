@@ -12,6 +12,9 @@ Grab a copy of the source code and install the dependencies:
 git clone https://github.com/micahflee/passphrases.git
 cd passphrases
 npm install
+cd src
+npm install
+cd ..
 ```
 
 To run the app while developing:
