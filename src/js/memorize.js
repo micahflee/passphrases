@@ -22,6 +22,16 @@ $(function(){
   $('.memorize-input').show();
   $('.memorize-go').hide();
 
+  // allow submitting the memorize input form by pressing enter
+  $('.memorize-input-form').submit(function(){
+    var passphrase = $('.passphrase-to-memorize').val();
+    startMemorizing(passphrase);
+    return false;
+  });
+  $('.button-start-memorizing').click(function(){
+    $('.memorize-input-form').submit();
+  });
+
   // start memorizing
   function startMemorizing(passphrase) {
     // switch from input mode to go mode
@@ -232,15 +242,11 @@ $(function(){
     nextTry();
   }
 
-  $('.button-start-memorizing').click(function(){
-    var passphrase = $('.passphrase-to-memorize').val();
-    startMemorizing(passphrase);
-  });
-
   $('.button-cancel').click(function(){
     // switch from go mode to input mode
     $('.memorize-input').show();
     $('.memorize-go').hide();
+    $('.passphrase-to-memorize').focus();
 
     // stop listening for space keypress
     $(window).unbind('keypress');

@@ -58,6 +58,12 @@ $(function(){
       activateMemorize();
       deactivateGenerate();
       deactivateAbout();
+
+      if($('.memorize-input').is(':visible')) {
+        $('.passphrase-to-memorize').focus();
+      } else {
+        $('.passphrase-test').focus();
+      }
     };
   }
   $('.tab-memorize').click(clickMemorizeTab);
