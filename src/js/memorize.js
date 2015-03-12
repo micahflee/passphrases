@@ -25,7 +25,17 @@ $(function(){
   // allow submitting the memorize input form by pressing enter
   $('.memorize-input-form').submit(function(){
     var passphrase = $('.passphrase-to-memorize').val();
-    startMemorizing(passphrase);
+    if(passphrase != '') {
+      startMemorizing(passphrase);
+    } else {
+      // blank passphrases not allowed
+      $('.passphrase-to-memorize').addClass('typo');
+      setTimeout(function(){
+        $('.passphrase-to-memorize').removeClass('typo');
+      }, 100);
+      $('.passphrase-to-memorize').focus();
+    }
+
     return false;
   });
   $('.button-start-memorizing').click(function(){
