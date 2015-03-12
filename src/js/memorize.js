@@ -141,6 +141,7 @@ $(function(){
 
           // notification
           Passphrases.soundEffects['notification'].play();
+          Passphrases.notify('Time to keep practicing your passphrase!');
 
           countdownComplete(countdownInterval);
         }

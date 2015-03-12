@@ -16,6 +16,8 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 */
 
 var $ = require('jquery');
+var gui = require('nw.gui');
+var win = gui.Window.get();
 
 Passphrases = {};
 
@@ -26,9 +28,24 @@ Passphrases.soundEffects = {
   'notification': new Audio("sounds/notification.ogg"),
 };
 
-$(function(){
-  var gui = require('nw.gui');
+// notifications
+Passphrases.notify = function(message) {
+  var options = {
+    icon: 'images/icon.png',
+    body: message
+  };
 
+  var notification = new Notification("Passphrases", options);
+  notification.onclick = function () {
+    win.focus();
+  }
+  notification.onshow = function () {
+    // auto close after 3 seconds
+    setTimeout(function() {notification.close();}, 3000);
+  }
+}
+
+$(function(){
   // make all links open in external browser
   $('a').each(function(){
     var url = $(this).attr('href');
