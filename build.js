@@ -22,7 +22,7 @@ var nw = new NwBuilder({
     files: './src/**',
     platforms: ['osx', 'win'],
     macIcns: './icons/icon.icns',
-    winIco: './icons/icon.ico'
+    //winIco: './icons/icon.ico'
 });
 
 nw.on('log',  console.log);
