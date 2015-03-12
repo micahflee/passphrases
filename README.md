@@ -13,3 +13,17 @@ git clone https://github.com/micahflee/passphrases.git
 cd passphrases
 npm install
 ```
+
+To run the app while developing:
+
+```sh
+node_modules/.bin/nwbuild -r .
+```
+
+To build binaries for OSX and Windows:
+
+```sh
+./build.js
+```
+
+While it's simple to get this to run in Linux as well, I'm still working on the best way to package it.
