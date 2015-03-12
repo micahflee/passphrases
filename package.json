@@ -1,0 +1,7 @@
+{
+  "name": "passphrases",
+  "version": "0.1.0",
+  "devDependencies": {
+    "node-webkit-builder": "^1.0.11"
+  }
+}

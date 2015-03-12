@@ -1,6 +1,7 @@
 {
   "name": "passphrases",
   "main": "./index.html",
+  "description": "A tool to generate and help memorize cryptographically secure passphrases.",
   "window": {
     "title": "Passphrases",
     "icon": "./images/icon.png",
@@ -12,13 +13,5 @@
     "max_width": 600,
     "max_height": 300
   },
-  "version": "0.0.1",
-  "private": true,
-  "dependencies": {
-    "nw": "^0.12.0"
-  },
-  "devDependencies": {
-    "grunt": "^0.4.5",
-    "grunt-node-webkit-builder": "^1.0.2"
-  }
+  "version": "0.1.0"
 }
