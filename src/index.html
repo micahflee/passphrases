@@ -27,6 +27,7 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
     <script src="js/tabs.js"></script>
     <script src="js/generate.js"></script>
     <script src="js/memorize.js"></script>
+    <script src="js/about.js"></script>
   </head>
 
   <body>
@@ -110,13 +111,15 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
         <!-- about -->
         <div class="content content-about">
-          <p><strong>Passphrases</strong> is a tool that helps you generate and memorize cryptographically secure passphrases.</p>
+          <p><strong>Passphrases</strong> is a tool that helps you generate and memorize <a href="https://firstlook.org/theintercept/#blogpost">cryptographically secure passphrases</a>.</p>
 
-          <p>Passphrases are generated using the <a href="https://en.wikipedia.org/wiki/Diceware">Diceware</a> method.</p>
+          <form>
+            <label for="enable-sound"><input type="checkbox" id="enable-sound" class="enable-sound" name="enable-sound"> Enable sound</label>
+          </form>
 
           <p class="about-license">
             Copyright &copy; 2015 Micah Lee<br/>
-            Passphrases is open source software, licensed under GPLv3 | <a href="#">source code</a>
+            Passphrases is open source software, licensed under GPLv3 | <a href="https://github.com/micahflee/passphrases">source code</a>
           </p>
         </div>
       </div>

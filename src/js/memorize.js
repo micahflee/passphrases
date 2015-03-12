@@ -140,7 +140,7 @@ $(function(){
             currentCountdown++;
 
           // notification
-          Passphrases.soundEffects['notification'].play();
+          Passphrases.playSound('notification');
           Passphrases.notify('Time to keep practicing your passphrase!');
 
           countdownComplete(countdownInterval);
@@ -164,7 +164,7 @@ $(function(){
 
         // play success sound effect
         if(typedWithoutLooking) {
-          Passphrases.soundEffects['success'].play();
+          Passphrases.playSound('success');
         }
 
         // is the animation still happening?

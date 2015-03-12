@@ -24,11 +24,16 @@ var win = gui.Window.get();
 Passphrases = {};
 
 // load sound effects
-Passphrases.soundEffects = {
+var soundEffects = {
   'generate': new Audio("sounds/dice.ogg"),
   'success': new Audio("sounds/success.ogg"),
   'notification': new Audio("sounds/notification.ogg"),
 };
+Passphrases.playSound = function(sound) {
+  if(Passphrases.prefs['sound']) {
+    soundEffects[sound].play();
+  }
+}
 
 // notifications
 Passphrases.notify = function(message) {
