@@ -17,9 +17,22 @@ You should have received a copy of the GNU General Public License
 along with this program.  If not, see <http://www.gnu.org/licenses/>.
 */
 
+var fs = require('fs-extra');
+var exec = require('child_process').exec;
 var NwBuilder = require('node-webkit-builder');
 
+// are we building a package to distribute?
 var buildPackage = (process.argv[2] == '--package');
+if(buildPackage) {
+  // clean up from last time
+  try {
+    fs.removeSync('./dist');
+    fs.mkdirSync('./dist');
+  } catch(e) {}
+}
+
+// learn version of app
+var version = JSON.parse(fs.readFileSync('./src/package.json'))['version'];
 
 function build(options, callback) {
   var nw = new NwBuilder(options);
@@ -40,25 +53,61 @@ var options = { files: './src/**' }
 
 // Linux
 if(process.platform == 'linux') {
-  if(process.arch == 'ia32') {
-    options.platforms = ['linux32'];
-  } else if(process.arch == 'x64') {
-    options.platforms = ['linux64'];
-  } else {
-    console.log('Error: unsupported architecture');
-    process.exit();
-  }
+  options.platforms = ['linux32', 'linux64'];
 
   build(options, function(err){
     if(err) throw err;
-    console.log('Note that there is no simple way to build source/binary Debian packages yet.');
+    if(buildPackage) {
+      console.log('Note that there is no simple way to build source packages yet.');
+
+      // building two .deb packages, for linux32 and linux64
+      ['linux32', 'linux64'].forEach(function(arch){
+        if(!arch) return;
+        var pkgName = 'passphrases_' + version + '-1_{{arch}}';
+        if(arch == 'linux32') pkgName = pkgName.replace('{{arch}}', 'i386');
+        if(arch == 'linux64') pkgName = pkgName.replace('{{arch}}', 'amd64');
+
+        try {
+          // create directory structure
+          fs.mkdirsSync('./dist/' + pkgName + '/opt');
+          fs.mkdirsSync('./dist/' + pkgName + '/usr/bin');
+          fs.mkdirsSync('./dist/' + pkgName + '/usr/share/pixmaps');
+          fs.mkdirsSync('./dist/' + pkgName + '/usr/share/applications');
+          fs.mkdirsSync('./dist/' + pkgName + '/DEBIAN');
+
+          // copy binaries
+          fs.copySync('./build/Passphrases/' + arch, './dist/' + pkgName + '/opt/Passphrases');
+
+          // copy icon, .desktop
+          fs.copySync('./packaging/passphrases.png', './dist/' + pkgName + '/usr/share/pixmaps/passphrases.png');
+          fs.copySync('./packaging/passphrases.desktop', './dist/' + pkgName + '/usr/share/applications/passphrases.desktop');
+
+          // create passphrases symlink
+          fs.symlinkSync('../../opt/Passphrases/Passphrases', './dist/' + pkgName + '/usr/bin/passphrases');
+
+          // write the debian control file
+          var control = fs.readFileSync('./packaging/DEBIAN/control', { encoding: 'utf8' });
+          control = control.replace('{{version}}', version);
+          if(arch == 'linux32') control = control.replace('{{arch}}', 'i386');
+          if(arch == 'linux64') control = control.replace('{{arch}}', 'amd64');
+          fs.writeFileSync('./dist/' + pkgName + '/DEBIAN/control', control);
+
+          // build .deb packages
+          console.log('Building ' + pkgName + '.deb');
+          exec('dpkg-deb --build ' + pkgName, { cwd: './dist' }, function(err, stdout, stderr){
+            if(err) throw err;
+          });
+
+        } catch(e) { throw e; }
+      });
+    }
   });
 }
 
 // OSX
 else if(process.platform == 'darwin') {
   options.platforms = ['osx32'];
-  options.macIcns = './icons/icon.icns';
+  options.macIcns = './packaging/icon.icns';
 
   build(options, function(err){
     if(err) throw err;
@@ -72,7 +121,7 @@ else if(process.platform == 'darwin') {
 // Windows
 else if(process.platform == 'win32') {
   options.platforms = ['win32'];
-  options.winIco = './icons/icon.ico';
+  options.winIco = './packaging/icon.ico';
 
   build(options, function(err){
     if(err) throw err;

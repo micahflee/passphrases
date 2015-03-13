@@ -1,0 +1,9 @@
+Package: passphrases
+Version: {{version}}-1
+Section: base
+Priority: optional
+Architecture: {{arch}}
+Depends:
+Maintainer: Micah Lee <micah@micahflee.com>
+Description: Passphrases is a tool that helps you generate high-entropy
+ passphrases and memorize them using spaced repetition.

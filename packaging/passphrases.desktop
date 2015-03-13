@@ -1,0 +1,9 @@
+[Desktop Entry]
+Encoding=UTF-8
+Name=Passphrases
+Comment=Generate and memorize high-entropy passphrases
+Exec=/usr/bin/passphrases
+Terminal=false
+Type=Application
+Icon=/usr/share/pixmaps/passphrases.png
+Categories=Utility;
