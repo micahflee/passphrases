@@ -4,7 +4,7 @@ A tool to generate and help memorize cryptographically secure passphrases.
 
 ## Build Instructions
 
-These instructions have never been tested in Windows. Install [node.js](https://nodejs.org/) and [npm](https://www.npmjs.com/) for your operating system. Also, you'll need to install [Wine](https://www.winehq.org/) on your computer to set the Windows icon in the build process for `build.js` to work (if you don't care about building for Windows, comment out the `winIco` line in `build.js`).
+Install [node.js](https://nodejs.org/) and [npm](https://www.npmjs.com/) for your operating system.
 
 Grab a copy of the source code and install the dependencies:
 
@@ -23,10 +23,14 @@ To run the app while developing:
 node_modules/.bin/nwbuild -r src
 ```
 
-To build binaries for OSX and Windows:
+To build binaries for the current platform:
 
 ```sh
-./build.js
+node build.js
 ```
 
-While it's simple to get this to run in Linux as well, I'm still working on the best way to package it.
+If you'd like to completely package it, including codesigning and building an installer, use the `--package` argument:
+
+```sh
+node build.js --package
+```

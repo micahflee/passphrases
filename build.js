@@ -18,17 +18,73 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 */
 
 var NwBuilder = require('node-webkit-builder');
-var nw = new NwBuilder({
-    files: './src/**',
-    platforms: ['osx', 'win'],
-    macIcns: './icons/icon.icns',
-    //winIco: './icons/icon.ico'
-});
 
-nw.on('log',  console.log);
+var buildPackage = (process.argv[2] == '--package');
 
-nw.build().then(function () {
-   console.log('all done!');
-}).catch(function (error) {
-    console.error(error);
-});
+function build(options, callback) {
+  var nw = new NwBuilder(options);
+
+  nw.on('log',  console.log);
+  nw.build().then(function () {
+    callback();
+  }).catch(function(err) {
+    console.log('');
+    console.log('Build complete.');
+    console.log('');
+    callback(err);
+  });
+}
+
+// options for all platforms
+var options = { files: './src/**' }
+
+// Linux
+if(process.platform == 'linux') {
+  if(process.arch == 'ia32') {
+    options.platforms = ['linux32'];
+  } else if(process.arch == 'x64') {
+    options.platforms = ['linux64'];
+  } else {
+    console.log('Error: unsupported architecture');
+    process.exit();
+  }
+
+  build(options, function(err){
+    if(err) throw err;
+    console.log('Note that there is no simple way to build source/binary Debian packages yet.');
+  });
+}
+
+// OSX
+else if(process.platform == 'darwin') {
+  options.platforms = ['osx'];
+  options.macIcns = './icons/icon.icns';
+
+  build(options, function(err){
+    if(err) throw err;
+    if(buildPackage) {
+      // todo: OSX code signing
+      // todo: OSX packaging
+    }
+  });
+}
+
+// Windows
+else if(process.platform == 'win32') {
+  options.platforms = ['win32'];
+  options.winIco = './icons/icon.ico';
+
+  build(options, function(err){
+    if(err) throw err;
+    if(buildPackage) {
+      // todo: Windows code signing
+      // todo: Windows packaging
+    }
+  });
+}
+
+// unsupported platform
+else {
+  console.log('Error: unrecognized platform');
+  process.exit();
+}
