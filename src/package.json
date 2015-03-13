@@ -1,5 +1,5 @@
 {
-  "name": "passphrases",
+  "name": "Passphrases",
   "main": "./index.html",
   "description": "A tool to generate and help memorize cryptographically secure passphrases.",
   "window": {
