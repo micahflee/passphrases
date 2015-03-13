@@ -143,16 +143,16 @@ $(function(){
       var random = new Random();
       var passphrase = '';
       for(var i = 0; i < selectedWords; i++) {
-        passphrase += wordlists[selectedWordlist].wordlist[random.integer(0, wordlistCount - 1)];
+        passphrase += wordlists[selectedWordlist].wordlist[random.integer(0, wordlistCount - 1)].trim();
         if(i < selectedWords - 1) { passphrase += ' '; }
       }
 
-      $('.passphrase').html(passphrase);
+      $('.passphrase').text(passphrase);
   }
 
   $('.button-generate').click(generatePassphrase);
   $('.button-memorize').click(function(){
-    var passphrase = $('.passphrase').html();
+    var passphrase = $('.passphrase').text();
     Passphrases.tabMemorize();
     Passphrases.memorizeStart(passphrase);
   });
