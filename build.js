@@ -57,7 +57,7 @@ if(process.platform == 'linux') {
 
 // OSX
 else if(process.platform == 'darwin') {
-  options.platforms = ['osx'];
+  options.platforms = ['osx32'];
   options.macIcns = './icons/icon.icns';
 
   build(options, function(err){
