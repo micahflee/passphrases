@@ -62,11 +62,11 @@ Passphrases.prefs = {
 function getPrefsDirname() {
   var dirname;
   if(process.platform == 'linux') {
-    dirname = process.env.HOME + '/.config/Passphrases'
+    dirname = process.env.HOME + '/.config/PassphrasesApp'
   } else if(process.platform == 'darwin') {
-    dirname = process.env.HOME + '/Library/Application Support/Passphrases'
+    dirname = process.env.HOME + '/Library/Application Support/PassphrasesApp'
   } else if(process.platform == 'win32') {
-    dirname = process.env.APPDATA + '\\\\Passphrases'
+    dirname = process.env.APPDATA + '\\\\PassphrasesApp'
   }
   return dirname;
 }
