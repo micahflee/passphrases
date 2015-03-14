@@ -24,7 +24,7 @@
 */
 
 var fs = require('fs-extra');
-var exec = require('child_process').exec;
+var child_process = require('child_process');
 var NwBuilder = require('node-webkit-builder');
 
 // are we building a package to distribute?
@@ -100,7 +100,7 @@ if(process.platform == 'linux') {
 
           // build .deb packages
           console.log('Building ' + pkgName + '.deb');
-          exec('dpkg-deb --build ' + pkgName, { cwd: './dist' }, function(err, stdout, stderr){
+          child_process.exec('dpkg-deb --build ' + pkgName, { cwd: './dist' }, function(err, stdout, stderr){
             if(err) throw err;
           });
 
@@ -132,8 +132,20 @@ else if(process.platform == 'win32') {
   build(options, function(err){
     if(err) throw err;
     if(buildPackage) {
-      // todo: Windows code signing
-      // todo: Windows packaging
+      // copy binaries
+      fs.copySync('./build/passphrases/win32', './dist/Passphrases');
+      
+      // copy license
+      fs.copySync('./LICENSE.md', './dist/Passphrases/LICENSE.md');
+      
+      // codesign Passphrases.exe
+      child_process.execSync('signtool.exe sign /v /d "Passphrases" /a /tr "http://www.startssl.com/timestamp" .\\dist\\Passphrases\\Passphrases.exe');
+      
+      // make the installer
+      child_process.execSync('makensisw packaging\\windows_installer.nsi');
+      
+      // codesign the installer
+      child_process.execSync('signtool.exe sign /v /d "Passphrases" /a /tr "http://www.startssl.com/timestamp" .\\dist\\Passphrases_Setup.exe');
     }
   });
 }

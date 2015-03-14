@@ -45,4 +45,14 @@ TODO: Finish OSX packaging.
 
 ### Windows
 
-TODO: Finish Windows packaging.
+Running `node build.js --package` in Windows does a couple of things. First, it uses nw.js to create a folder that includes `Passphrases.exe`. It also builds an installer, `Passphrases_Setup.exe`, which includes an uninstaller, `uninstall.exe`. It uses Authenticode to codesign all three of these binaries.
+
+To get started:
+
+* Go to http://nsis.sourceforge.net/Download and download the latest NSIS. I downloaded nsis-3.0b0-setup.exe.
+* Go to http://msdn.microsoft.com/en-us/vstudio/aa496123 and install the latest .NET Framework. I installed .NET Framework 4.5.1.
+* Go to http://www.microsoft.com/en-us/download/confirmation.aspx?id=8279 and install the Windows SDK.
+* Right click on Computer, go to Properties. Click "Advanced system settings". Click Environment Variables. Under "System variables" double-click on Path to edit it. Add `;C:\Program Files (x86)\NSIS;C:\Program Files\Microsoft SDKs\Windows\v7.1\Bin`.
+
+You'll also, of course, need a code signing certificate. I roughly followed [this guide](http://blog.assarbad.net/20110513/startssl-code-signing-certificate/) to make one using my StartSSL account. Once you get a code signing key and certificate and covert it to a pfx file, import it into your certificate store.
+
