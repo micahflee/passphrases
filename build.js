@@ -93,18 +93,28 @@ if(process.platform == 'linux') {
           // create passphrases symlink
           fs.symlinkSync('../../opt/Passphrases/Passphrases', './dist/' + pkgName + '/usr/bin/passphrases');
 
-          // write the debian control file
-          var control = fs.readFileSync('./packaging/DEBIAN/control', { encoding: 'utf8' });
-          control = control.replace('{{version}}', version);
-          if(arch == 'linux32') control = control.replace('{{arch}}', 'i386');
-          if(arch == 'linux64') control = control.replace('{{arch}}', 'amd64');
-          fs.writeFileSync('./dist/' + pkgName + '/DEBIAN/control', control);
+          // can we make debian packages?
+          child_process.exec('which dpkg-deb', function(err, stdout, stderr){
+            if(err || stdout == '') {
+              console.log('Cannot find dpkg-deb, skipping building Debian package for '+arch);
+              return;
+            }
 
-          // build .deb packages
-          console.log('Building ' + pkgName + '.deb');
-          child_process.exec('dpkg-deb --build ' + pkgName, { cwd: './dist' }, function(err, stdout, stderr){
-            if(err) throw err;
+            // write the debian control file
+            var control = fs.readFileSync('./packaging/DEBIAN/control', { encoding: 'utf8' });
+            control = control.replace('{{version}}', version);
+            if(arch == 'linux32') control = control.replace('{{arch}}', 'i386');
+            if(arch == 'linux64') control = control.replace('{{arch}}', 'amd64');
+            fs.writeFileSync('./dist/' + pkgName + '/DEBIAN/control', control);
+
+            // build .deb packages
+            console.log('Building ' + pkgName + '.deb');
+            child_process.exec('dpkg-deb --build ' + pkgName, { cwd: './dist' }, function(err, stdout, stderr){
+              if(err) throw err;
+            });
           });
+
+          // can we make rpm packages?
 
         } catch(e) { throw e; }
       });
