@@ -24,6 +24,7 @@
 */
 
 var fs = require('fs-extra');
+var path = require('path');
 var child_process = require('child_process');
 var NwBuilder = require('node-webkit-builder');
 
@@ -68,20 +69,13 @@ if(process.platform == 'linux') {
     if(buildPackage) {
       console.log('Note that there is no simple way to build source packages yet.');
 
-      // building two .deb packages, for linux32 and linux64
-      ['linux32', 'linux64'].forEach(function(arch){
-        if(!arch) return;
-        var pkgName = 'passphrases_' + version + '-1_{{arch}}';
-        if(arch == 'linux32') pkgName = pkgName.replace('{{arch}}', 'i386');
-        if(arch == 'linux64') pkgName = pkgName.replace('{{arch}}', 'amd64');
-
+      function copyBinaryPackageSync(pkgName, arch) {
         try {
           // create directory structure
           fs.mkdirsSync('./dist/' + pkgName + '/opt');
           fs.mkdirsSync('./dist/' + pkgName + '/usr/bin');
           fs.mkdirsSync('./dist/' + pkgName + '/usr/share/pixmaps');
           fs.mkdirsSync('./dist/' + pkgName + '/usr/share/applications');
-          fs.mkdirsSync('./dist/' + pkgName + '/DEBIAN');
 
           // copy binaries
           fs.copySync('./build/Passphrases/' + arch, './dist/' + pkgName + '/opt/Passphrases');
@@ -92,31 +86,99 @@ if(process.platform == 'linux') {
 
           // create passphrases symlink
           fs.symlinkSync('../../opt/Passphrases/Passphrases', './dist/' + pkgName + '/usr/bin/passphrases');
+        } catch(e) { throw e; }
+      }
 
-          // can we make debian packages?
-          child_process.exec('which dpkg-deb', function(err, stdout, stderr){
-            if(err || stdout == '') {
-              console.log('Cannot find dpkg-deb, skipping building Debian package for '+arch);
+      function copyAndReplace(src_filename, dest_filename, arch) {
+        var text = fs.readFileSync(src_filename, { encoding: 'utf8' });
+        text = text.replace('{{version}}', version);
+        if(arch == 'linux32') text = text.replace('{{arch}}', arch);
+        if(arch == 'linux64') text = text.replace('{{arch}}', arch);
+        fs.writeFileSync(dest_filename, text);
+      }
+
+      // can we make debian packages?
+      child_process.exec('which dpkg-deb', function(err, stdout, stderr){
+        if(err || stdout == '') {
+          console.log('Cannot find dpkg-deb, skipping building Debian package');
+          return;
+        }
+
+        // building two .deb packages, for linux32 and linux64
+        ['linux32', 'linux64'].forEach(function(arch){
+          if(!arch) return;
+
+          var debArch;
+          if(arch == 'linux32') debArch = 'i386';
+          if(arch == 'linux64') debArch = 'amd64';
+
+          var pkgName = 'passphrases_' + version + '-1_{{arch}}';
+          pkgName = pkgName.replace('{{arch}}', debArch);
+
+          copyBinaryPackageSync(pkgName, arch);
+
+          // write the debian control file
+          fs.mkdirsSync('./dist/' + pkgName + '/DEBIAN');
+          copyAndReplace('./packaging/DEBIAN/control', './dist/' + pkgName + '/DEBIAN/control', debArch);
+
+          // build .deb packages
+          console.log('Building ' + pkgName + '.deb');
+          child_process.exec('dpkg-deb --build ' + pkgName, { cwd: './dist' }, function(err, stdout, stderr){
+            if(err) throw err;
+          });
+        });
+      });
+
+      // can we make rpm packages?
+      child_process.exec('which rpmbuild', function(err, stdout, stderr){
+        if(err || stdout == '') {
+          console.log('Cannot find rpmbuild, skipping building Red Hat package');
+          return;
+        }
+
+        // building two .rpm packages, for linux32 and linux64
+        ['linux32', 'linux64'].forEach(function(arch){
+          if(!arch) return;
+
+          var rpmArch;
+          if(arch == 'linux32') rpmArch = 'i686';
+          if(arch == 'linux64') rpmArch = 'x86_64';
+
+          fs.mkdirsSync('./dist/' + rpmArch + '/RPMS');
+          fs.mkdirsSync('./dist/' + rpmArch + '/SRPMS');
+          fs.mkdirsSync('./dist/' + rpmArch + '/BUILD');
+          fs.mkdirsSync('./dist/' + rpmArch + '/SOURCES');
+          fs.mkdirsSync('./dist/' + rpmArch + '/SPECS');
+          fs.mkdirsSync('./dist/' + rpmArch + '/tmp');
+
+          var pkgName = 'passphrases-' + version;
+
+          copyBinaryPackageSync(rpmArch + '/' + pkgName, arch);
+
+          // write the spec file
+          copyAndReplace('./packaging/SPECS/passphrases.spec', './dist/' + rpmArch + '/SPECS/passphrases.spec', rpmArch);
+
+          // tarball the source
+          console.log('Compressing binary for ' + arch);
+          child_process.exec('tar -zcf SOURCES/' + pkgName + '.tar.gz ' + pkgName + '/', { cwd: './dist/' + rpmArch }, function(err, stdout, stderr){
+            if(err) {
+              console.log('Error after compressing - ' + arch, err);
               return;
             }
 
-            // write the debian control file
-            var control = fs.readFileSync('./packaging/DEBIAN/control', { encoding: 'utf8' });
-            control = control.replace('{{version}}', version);
-            if(arch == 'linux32') control = control.replace('{{arch}}', 'i386');
-            if(arch == 'linux64') control = control.replace('{{arch}}', 'amd64');
-            fs.writeFileSync('./dist/' + pkgName + '/DEBIAN/control', control);
+            console.log('Compressed for ' + arch + ', now building the RPM');
+            var topDir = path.resolve('./dist/' + rpmArch);
+            child_process.exec('rpmbuild --define \'_topdir ' + topDir +'\' -ba dist/' + rpmArch + '/SPECS/passphrases.spec', function(err, stdout, stderr){
+              if(err) {
+                console.log('Error after rpmbuild - ' + arch, err);
+                return;
+              }
 
-            // build .deb packages
-            console.log('Building ' + pkgName + '.deb');
-            child_process.exec('dpkg-deb --build ' + pkgName, { cwd: './dist' }, function(err, stdout, stderr){
-              if(err) throw err;
-            });
+
+            } );
           });
+        });
 
-          // can we make rpm packages?
-
-        } catch(e) { throw e; }
       });
     }
   });
