@@ -134,16 +134,16 @@ else if(process.platform == 'win32') {
     if(buildPackage) {
       // copy binaries
       fs.copySync('./build/passphrases/win32', './dist/Passphrases');
-      
+
       // copy license
       fs.copySync('./LICENSE.md', './dist/Passphrases/LICENSE.md');
-      
+
       // codesign Passphrases.exe
       child_process.execSync('signtool.exe sign /v /d "Passphrases" /a /tr "http://www.startssl.com/timestamp" .\\dist\\Passphrases\\Passphrases.exe');
-      
+
       // make the installer
       child_process.execSync('makensisw packaging\\windows_installer.nsi');
-      
+
       // codesign the installer
       child_process.execSync('signtool.exe sign /v /d "Passphrases" /a /tr "http://www.startssl.com/timestamp" .\\dist\\Passphrases_Setup.exe');
     }
