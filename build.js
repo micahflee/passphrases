@@ -30,6 +30,8 @@ var NwBuilder = require('node-webkit-builder');
 // are we building a package to distribute?
 var buildPackage = (process.argv[2] == '--package');
 if(buildPackage) {
+  process.umask(0022);
+
   // clean up from last time
   try {
     fs.removeSync('./dist');
