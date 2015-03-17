@@ -140,6 +140,9 @@ if(process.platform == 'linux') {
         ['linux32', 'linux64'].forEach(function(arch){
           if(!arch) return;
 
+          // following instructions from:
+          // https://stackoverflow.com/questions/880227/what-is-the-minimum-i-have-to-do-to-create-an-rpm-file
+
           var rpmArch;
           if(arch == 'linux32') rpmArch = 'i686';
           if(arch == 'linux64') rpmArch = 'x86_64';
@@ -166,7 +169,7 @@ if(process.platform == 'linux') {
               return;
             }
 
-            console.log('Compressed for ' + arch + ', now building the RPM');
+            console.log('Building ' + pkgName + '.rpm (' + arch + ')');
             var topDir = path.resolve('./dist/' + rpmArch);
             child_process.exec('rpmbuild --define \'_topdir ' + topDir +'\' -ba dist/' + rpmArch + '/SPECS/passphrases.spec', function(err, stdout, stderr){
               if(err) {
@@ -174,8 +177,7 @@ if(process.platform == 'linux') {
                 return;
               }
 
-
-            } );
+            });
           });
         });
 
