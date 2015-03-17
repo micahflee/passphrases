@@ -194,8 +194,29 @@ else if(process.platform == 'darwin') {
   build(options, function(err){
     if(err) throw err;
     if(buildPackage) {
-      // todo: OSX code signing
-      // todo: OSX packaging
+      // copy .app folder
+      fs.copySync('./build/Passphrases/osx32/Passphrases.app', './dist/Passphrases.app');
+
+      // codesigning
+      console.log('Codesigning');
+      var developerId = 'Micah Lee';
+      child_process.exec('codesign --force --deep --verify --verbose --sign "' + developerId + '" Passphrases.app', { cwd: './dist' }, function(err, stdout, stderr){
+        if(err) {
+          console.log('Error during codesigning', err);
+          return;
+        }
+
+        // OSX packaging
+        console.log('Compressing Passphrases.app');
+        child_process.exec('zip -r Passphrases.zip Passphrases.app', { cwd: './dist' }, function(err, stdout, stderr){
+          if(err) {
+            console.log('Error during compression', err);
+            return;
+          }
+
+          fs.removeSync('./dist/Passphrases.app');
+        });
+      });
     }
   });
 }
