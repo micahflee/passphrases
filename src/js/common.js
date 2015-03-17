@@ -27,6 +27,16 @@ var $ = require('jquery');
 var gui = require('nw.gui');
 var win = gui.Window.get();
 
+// make shortcut keys like Cmd-Q work in OSX (#4)
+if(process.platform === 'darwin') {
+  var nativeMenuBar = new gui.Menu({ type: "menubar" });
+  nativeMenuBar.createMacBuiltin("Passphrases", {
+    hideEdit: true,
+    hideWindow: true
+  });
+  win.menu = nativeMenuBar;
+}
+
 Passphrases = {};
 
 // load sound effects
