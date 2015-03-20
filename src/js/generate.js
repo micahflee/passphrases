@@ -48,6 +48,10 @@ $(function(){
       'name': 'Fran&ccedil;ais Diceware',
       'description': 'Dictionnaire fran&ccedil;ais par Matthieu Weber'
     },
+    'italian-diceware': {
+      'name': 'Italiano Diceware',
+      'description': 'Lista di parole Diceware in Italiano by Tarin Gamberini - GPL'
+    },
   };
 
   var wordlistCount = 0;
