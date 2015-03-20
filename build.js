@@ -140,6 +140,9 @@ if(process.platform == 'linux') {
         ['linux32', 'linux64'].forEach(function(arch){
           if(!arch) return;
 
+          // following instructions from:
+          // https://stackoverflow.com/questions/880227/what-is-the-minimum-i-have-to-do-to-create-an-rpm-file
+
           var rpmArch;
           if(arch == 'linux32') rpmArch = 'i686';
           if(arch == 'linux64') rpmArch = 'x86_64';
@@ -166,7 +169,7 @@ if(process.platform == 'linux') {
               return;
             }
 
-            console.log('Compressed for ' + arch + ', now building the RPM');
+            console.log('Building ' + pkgName + '.rpm (' + arch + ')');
             var topDir = path.resolve('./dist/' + rpmArch);
             child_process.exec('rpmbuild --define \'_topdir ' + topDir +'\' -ba dist/' + rpmArch + '/SPECS/passphrases.spec', function(err, stdout, stderr){
               if(err) {
@@ -174,8 +177,7 @@ if(process.platform == 'linux') {
                 return;
               }
 
-
-            } );
+            });
           });
         });
 
@@ -192,8 +194,29 @@ else if(process.platform == 'darwin') {
   build(options, function(err){
     if(err) throw err;
     if(buildPackage) {
-      // todo: OSX code signing
-      // todo: OSX packaging
+      // copy .app folder
+      fs.copySync('./build/Passphrases/osx32/Passphrases.app', './dist/Passphrases.app');
+
+      // codesigning
+      console.log('Codesigning');
+      var developerId = 'Micah Lee';
+      child_process.exec('codesign --force --deep --verify --verbose --sign "' + developerId + '" Passphrases.app', { cwd: './dist' }, function(err, stdout, stderr){
+        if(err) {
+          console.log('Error during codesigning', err);
+          return;
+        }
+
+        // OSX packaging
+        console.log('Compressing Passphrases.app');
+        child_process.exec('zip -r Passphrases.zip Passphrases.app', { cwd: './dist' }, function(err, stdout, stderr){
+          if(err) {
+            console.log('Error during compression', err);
+            return;
+          }
+
+          fs.removeSync('./dist/Passphrases.app');
+        });
+      });
     }
   });
 }
