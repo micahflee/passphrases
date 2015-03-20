@@ -43,6 +43,10 @@ $(function(){
     'german-diceware': {
       'name': 'Deutsch Diceware',
       'description': 'Deutsch W&ouml;rterbuch, von Benjamin Tenne - GPL'
+    },
+    'spanish-diceware': {
+      'name': 'Espa&ntilde;ol Diceware',
+      'description': 'Diccionario espa&ntilde;ol por Manuel Palao - GPL'
     }
   };
 
