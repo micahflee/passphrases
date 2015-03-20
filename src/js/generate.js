@@ -28,14 +28,18 @@ var $ = require('jquery'),
 $(function(){
   // load the wordlists
   var wordlists = {
+    'securedrop': {
+      'name': 'SecureDrop',
+      'description': 'Wordlist used for generating SecureDrop code names'
+    },
     'diceware': {
       'name': 'Diceware',
       'description': 'Original Diceware wordlist'
     },
-    'securedrop': {
-      'name': 'SecureDrop',
-      'description': 'Wordlist used for generating SecureDrop code names'
-    }
+    'catalan': {
+      'name': 'Catalan',
+      'description': 'Diccionari catal&agrave; per Marcel Hernandez CC-BY 4.0'
+    },
   };
 
   var wordlistCount = 0;
