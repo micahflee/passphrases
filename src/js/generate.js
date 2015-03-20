@@ -32,12 +32,12 @@ $(function(){
       'name': 'SecureDrop',
       'description': 'Wordlist used for generating SecureDrop code names'
     },
-    'diceware': {
-      'name': 'Diceware',
-      'description': 'Original Diceware wordlist'
+    'english-diceware': {
+      'name': 'English Diceware',
+      'description': 'Original English Diceware wordlist'
     },
-    'catalan': {
-      'name': 'Catalan',
+    'catalan-diceware': {
+      'name': 'Catalan Diceware',
       'description': 'Diccionari catal&agrave; per Marcel Hernandez CC-BY 4.0'
     },
   };
