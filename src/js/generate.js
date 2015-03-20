@@ -52,6 +52,10 @@ $(function(){
       'name': 'Italiano Diceware',
       'description': 'Lista di parole Diceware in Italiano by Tarin Gamberini - GPL'
     },
+    'japanese-diceware': {
+      'name': 'Japanese Diceware',
+      'description': 'Japanese Diceware by Hiroshi Yuki &amp; J Greely - CC-BY-SA'
+    },
   };
 
   var wordlistCount = 0;
