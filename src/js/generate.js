@@ -47,7 +47,11 @@ $(function(){
     'spanish-diceware': {
       'name': 'Espa&ntilde;ol Diceware',
       'description': 'Diccionario espa&ntilde;ol por Manuel Palao - GPL'
-    }
+    },
+    'french-diceware': {
+      'name': 'Fran&ccedil;ais Diceware',
+      'description': 'Dictionnaire fran&ccedil;ais par Matthieu Weber'
+    },
   };
 
   var wordlistCount = 0;
