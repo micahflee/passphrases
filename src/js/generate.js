@@ -60,6 +60,14 @@ $(function(){
       'name': 'Dutch Diceware',
       'description': 'Nederlands woordenboek door Bart Van den Eynde - GPL'
     },
+    'polish-diceware': {
+      'name': 'Polski Diceware',
+      'description': 'Polski S&lstrok;ownik przez Piotr (DrFugazi) Tarnowski'
+    },
+    'swedish-diceware': {
+      'name': 'Svensk Diceware',
+      'description': 'Svensk ordbok av Magnus Bodin'
+    },
   };
 
   var wordlistCount = 0;
