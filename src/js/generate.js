@@ -38,8 +38,12 @@ $(function(){
     },
     'catalan-diceware': {
       'name': 'Catalan Diceware',
-      'description': 'Diccionari catal&agrave; per Marcel Hernandez CC-BY 4.0'
+      'description': 'Diccionari catal&agrave; per Marcel Hernandez - CC-BY 4.0'
     },
+    'german-diceware': {
+      'name': 'Deutsch Diceware',
+      'description': 'Deutsch W&ouml;rterbuch, von Benjamin Tenne - GPL'
+    }
   };
 
   var wordlistCount = 0;
