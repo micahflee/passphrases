@@ -30,7 +30,7 @@ $(function(){
   var wordlists = {
     'securedrop': {
       'name': 'SecureDrop',
-      'description': 'Wordlist used for generating SecureDrop code names'
+      'description': 'English wordlist used for generating SecureDrop code names'
     },
     'english-diceware': {
       'name': 'English Diceware',
@@ -55,6 +55,10 @@ $(function(){
     'japanese-diceware': {
       'name': 'Japanese Diceware',
       'description': 'Japanese Diceware by Hiroshi Yuki &amp; J Greely - CC-BY-SA'
+    },
+    'dutch-diceware': {
+      'name': 'Dutch Diceware',
+      'description': 'Nederlands woordenboek door Bart Van den Eynde - GPL'
     },
   };
 
