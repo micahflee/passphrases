@@ -28,14 +28,46 @@ var $ = require('jquery'),
 $(function(){
   // load the wordlists
   var wordlists = {
-    'diceware': {
-      'name': 'Diceware',
-      'description': 'Original Diceware wordlist'
-    },
     'securedrop': {
       'name': 'SecureDrop',
-      'description': 'Wordlist used for generating SecureDrop code names'
-    }
+      'description': 'English wordlist used for generating SecureDrop code names'
+    },
+    'english-diceware': {
+      'name': 'English Diceware',
+      'description': 'Original English Diceware wordlist'
+    },
+    'catalan-diceware': {
+      'name': 'Catalan Diceware',
+      'description': 'Diccionari catal&agrave; per Marcel Hernandez - CC-BY 4.0'
+    },
+    'german-diceware': {
+      'name': 'Deutsch Diceware',
+      'description': 'Deutsch W&ouml;rterbuch, von Benjamin Tenne - GPL'
+    },
+    'french-diceware': {
+      'name': 'Fran&ccedil;ais Diceware',
+      'description': 'Dictionnaire fran&ccedil;ais par Matthieu Weber'
+    },
+    'italian-diceware': {
+      'name': 'Italiano Diceware',
+      'description': 'Lista di parole Diceware in Italiano by Tarin Gamberini - GPL'
+    },
+    'japanese-diceware': {
+      'name': 'Japanese Diceware',
+      'description': 'Japanese Diceware by Hiroshi Yuki &amp; J Greely - CC-BY-SA'
+    },
+    'dutch-diceware': {
+      'name': 'Dutch Diceware',
+      'description': 'Nederlands woordenboek door Bart Van den Eynde - GPL'
+    },
+    'polish-diceware': {
+      'name': 'Polski Diceware',
+      'description': 'Polski S&lstrok;ownik przez Piotr (DrFugazi) Tarnowski'
+    },
+    'swedish-diceware': {
+      'name': 'Svensk Diceware',
+      'description': 'Svensk ordbok av Magnus Bodin'
+    },
   };
 
   var wordlistCount = 0;
