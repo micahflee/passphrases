@@ -199,23 +199,23 @@ else if(process.platform == 'darwin') {
 
       // codesigning
       console.log('Codesigning');
-      var developerId = 'Micah Lee';
-      child_process.exec('codesign --force --deep --verify --verbose --sign "' + developerId + '" Passphrases.app', { cwd: './dist' }, function(err, stdout, stderr){
+      var signingIdentityApp = '3rd Party Mac Developer Application: Micah Lee';
+      var signingIdentityInstaller = 'Developer ID Installer: Micah Lee';
+      child_process.exec('codesign --force --deep --verify --verbose --sign "' + signingIdentityApp + '" Passphrases.app', { cwd: './dist' }, function(err, stdout, stderr){
         if(err) {
           console.log('Error during codesigning', err);
           return;
         }
 
-        // OSX packaging
-        console.log('Compressing Passphrases.app');
-        child_process.exec('zip -r Passphrases.zip Passphrases.app', { cwd: './dist' }, function(err, stdout, stderr){
+        // build a package
+        child_process.exec('productbuild --component Passphrases.app /Applications Passphrases.pkg --sign "' + signingIdentityInstaller + '"', { cwd: './dist' }, function(err, stdout, stderr){
           if(err) {
-            console.log('Error during compression', err);
+            console.log('Error during productbuild', err);
             return;
           }
-
-          fs.removeSync('./dist/Passphrases.app');
+          console.log('All done');
         });
+
       });
     }
   });
