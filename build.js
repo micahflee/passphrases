@@ -89,11 +89,11 @@ if(process.platform == 'linux') {
         } catch(e) { throw e; }
       }
 
-      function copyAndReplace(src_filename, dest_filename, arch) {
+      function copyAndReplace(src_filename, dest_filename, arch, replaceArch) {
         var text = fs.readFileSync(src_filename, { encoding: 'utf8' });
         text = text.replace('{{version}}', version);
-        if(arch == 'linux32') text = text.replace('{{arch}}', arch);
-        if(arch == 'linux64') text = text.replace('{{arch}}', arch);
+        if(arch == 'linux32') text = text.replace('{{arch}}', replaceArch);
+        if(arch == 'linux64') text = text.replace('{{arch}}', replaceArch);
         fs.writeFileSync(dest_filename, text);
       }
 
@@ -119,7 +119,7 @@ if(process.platform == 'linux') {
 
           // write the debian control file
           fs.mkdirsSync('./dist/' + pkgName + '/DEBIAN');
-          copyAndReplace('./packaging/DEBIAN/control', './dist/' + pkgName + '/DEBIAN/control', debArch);
+          copyAndReplace('./packaging/DEBIAN/control', './dist/' + pkgName + '/DEBIAN/control', arch, debArch);
 
           // build .deb packages
           console.log('Building ' + pkgName + '.deb');
@@ -159,7 +159,7 @@ if(process.platform == 'linux') {
           copyBinaryPackageSync(rpmArch + '/' + pkgName, arch);
 
           // write the spec file
-          copyAndReplace('./packaging/SPECS/passphrases.spec', './dist/' + rpmArch + '/SPECS/passphrases.spec', rpmArch);
+          copyAndReplace('./packaging/SPECS/passphrases.spec', './dist/' + rpmArch + '/SPECS/passphrases.spec', arch, rpmArch);
 
           // tarball the source
           console.log('Compressing binary for ' + arch);
