@@ -36,6 +36,10 @@ $(function(){
       'name': 'English Diceware',
       'description': 'Original English Diceware wordlist'
     },
+    //'eowl': {
+    //  'name': 'English Open Word List',
+    //  'description': 'The English Open Word List. Copyright &copy; J Ross Beresford 1993-1999. All Rights Reserved.'
+    //},
     'catalan-diceware': {
       'name': 'Catalan Diceware',
       'description': 'Diccionari catal&agrave; per Marcel Hernandez - CC-BY 4.0'
@@ -118,11 +122,21 @@ $(function(){
     $('select.words').append($option);
   }
 
+  // populate the word separator dropdown
+  var $option = $('<option />').val(0).html('spaces');
+  $option.attr('selected', 'selected');
+  $('select.separator').append($option);
+  var $option = $('<option />').val(1).html('numbers');
+  $('select.separator').append($option);
+  var $option = $('<option />').val(2).html('both');
+  $('select.separator').append($option);
+
   // update each time options change
   function update() {
     // save option changes
     Passphrases.prefs.wordlist = $('select.wordlists').val();
     Passphrases.prefs.words = $('select.words').val();
+    Passphrases.prefs.separator = $('select.separator').val();
     Passphrases.savePrefs();
 
     // generate a new passphrase
@@ -168,6 +182,12 @@ $(function(){
   }
   $('select.wordlists').change(update);
   $('select.words').change(update);
+  $('select.separator').change(update);
+
+
+  function getRandomNumber (min, max) {
+    return (Math.floor(Math.random() * (max - min + 1)) + min);
+  }
 
   // generate a passphrase
   function generatePassphrase() {
@@ -180,9 +200,16 @@ $(function(){
 
       var random = new Random();
       var passphrase = '';
+      var sepchar = ' '
       for(var i = 0; i < selectedWords; i++) {
         passphrase += wordlists[selectedWordlist].wordlist[random.integer(0, wordlistCount - 1)].trim();
-        if(i < selectedWords - 1) { passphrase += ' '; }
+        if ($('select.separator').val() > 0) {
+          sepchar = getRandomNumber(1,10).toString();
+          if (sepchar == '10') {
+            sepchar = ' ';
+          }
+        }
+        if(i < selectedWords - 1) { passphrase += sepchar; }
       }
 
       $('.passphrase').text(passphrase);
