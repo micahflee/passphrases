@@ -203,11 +203,13 @@ $(function(){
       var sepchar = ' '
       for(var i = 0; i < selectedWords; i++) {
         passphrase += wordlists[selectedWordlist].wordlist[random.integer(0, wordlistCount - 1)].trim();
-        if ($('select.separator').val() > 0) {
-          sepchar = getRandomNumber(1,10).toString();
-          if (sepchar == '10') {
-            sepchar = ' ';
-          }
+        if ($('select.separator').val() == 1) {
+          sepchar = getRandomNumber(1,9).toString();
+          } else if ($('select.separator').val() == 2) {
+            sepchar = getRandomNumber(1,10).toString();
+            if (sepchar == '10') {
+              sepchar = ' ';
+            }  
         }
         if(i < selectedWords - 1) { passphrase += sepchar; }
       }
