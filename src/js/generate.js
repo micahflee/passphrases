@@ -122,6 +122,15 @@ $(function(){
     $('select.words').append($option);
   }
 
+  // populate the word separator dropdown
+  var $option = $('<option />').val(0).html('spaces');
+  $option.attr('selected', 'selected');
+  $('select.separator').append($option);
+  var $option = $('<option />').val(1).html('numbers');
+  $('select.separator').append($option);
+  var $option = $('<option />').val(2).html('punctuation');
+  $('select.separator').append($option);
+
   // update each time options change
   function update() {
     // save option changes
@@ -172,6 +181,8 @@ $(function(){
   }
   $('select.wordlists').change(update);
   $('select.words').change(update);
+  $('select.separator').change(update);
+  $("#use-upcase").on('click', function(){update()});
 
   // generate a passphrase
   function generatePassphrase() {
@@ -182,11 +193,28 @@ $(function(){
       selectedWords = $('select.words').val(),
       wordlistCount = wordlists[selectedWordlist].count;
 
+      var specialChars ="!\"#$%&'()*+,-./:;<=>?@[\]^_`{|}~";
+      var specialCharCount = specialChars.length;
+
       var random = new Random();
       var passphrase = '';
-      for(var i = 0; i < selectedWords; i++) {
-        passphrase += wordlists[selectedWordlist].wordlist[random.integer(0, wordlistCount - 1)].trim();
-        if(i < selectedWords - 1) { passphrase += ' '; }
+      var sepChar = ' ';
+      for (var i = 0; i < selectedWords; i++) {
+        newWord = wordlists[selectedWordlist].wordlist[random.integer(0, wordlistCount - 1)].trim();
+        if ($('#use-upcase:checked').val() == "on") {
+          if (random.integer(0, 1) == 1) {
+            newWord = newWord.charAt(0).toUpperCase() + newWord.substring(1);
+          }
+        }
+        passphrase += newWord;
+        if ($('select.separator').val() == 1) {
+            sepChar = random.integer(0, 9).toString();
+        } else {
+        if ($('select.separator').val() == 2) {
+              sepChar = specialChars[random.integer(0, specialCharCount-1)];
+          }
+        }
+        if(i < selectedWords - 1) { passphrase += sepChar; }
       }
 
       $('.passphrase').text(passphrase);

@@ -57,6 +57,7 @@ a {
 .generate-options {
   float: left;
   text-align: center;
+  font-size: 14px;
 }
 .wordlist-description {
   color: #666666;
