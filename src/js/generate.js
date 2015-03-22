@@ -36,6 +36,10 @@ $(function(){
       'name': 'English Diceware',
       'description': 'Original English Diceware wordlist'
     },
+    'eowl': {
+      'name': 'English Open Word List',
+      'description': 'The English Open Word List. Copyright &copy; J Ross Beresford 1993-1999. All Rights Reserved.'
+    },
     'catalan-diceware': {
       'name': 'Catalan Diceware',
       'description': 'Diccionari catal&agrave; per Marcel Hernandez - CC-BY 4.0'

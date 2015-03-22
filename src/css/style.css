@@ -71,6 +71,7 @@ a {
   padding: 5px;
   border: 1px solid #999999;
   height: 70px;
+  word-wrap: break-word;
 }
 .passphrase {
   text-align: center;
