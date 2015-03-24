@@ -1026,7 +1026,7 @@ $(function(){
         populateWordlistsDropdown();
 
         // select wordlist and words from prefs
-        // This is a security flaw
+        // This is a potential data-leak source
         //$('select.wordlists option[value="' + Passphrases.prefs.wordlist + '"]').prop('selected', true);
         //$('select.words option[value="' + Passphrases.prefs.words + '"]').prop('selected', true);
 
@@ -1057,7 +1057,7 @@ $(function(){
   // update each time options change
   function update() {
     // save option changes
-    // This is a security flaw
+    // This is a potential data-leak source
     //Passphrases.prefs.wordlist = $('select.wordlists').val();
     //Passphrases.prefs.words = $('select.words').val();
     //Passphrases.savePrefs();
