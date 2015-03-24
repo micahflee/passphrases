@@ -77,7 +77,7 @@ $(function(){
       'description': 'Abkhaz Wiktionary Words -- CC BY-SA'
     },
     'abkhaz-wiktionary-short': {
-      'name': 'Abkhaz Short Words Wiktionary',
+      'name': 'Abkhaz Short-Word Wiktionary',
       'description': 'Abkhaz Wiktionary Words -- CC BY-SA'
     },
     'afrikaans-wiktionary': {
@@ -85,7 +85,7 @@ $(function(){
       'description': 'Afrikaans Wiktionary Words -- CC BY-SA'
     },
     'afrikaans-wiktionary-short': {
-      'name': 'Afrikaans Short Words Wiktionary',
+      'name': 'Afrikaans Short-Word Wiktionary',
       'description': 'Afrikaans Wiktionary Words -- CC BY-SA'
     },
     'albanian-wiktionary': {
@@ -93,7 +93,7 @@ $(function(){
       'description': 'Albanian Wiktionary Words -- CC BY-SA'
     },
     'albanian-wiktionary-short': {
-      'name': 'Albanian Short Words Wiktionary',
+      'name': 'Albanian Short-Word Wiktionary',
       'description': 'Albanian Wiktionary Words -- CC BY-SA'
     },
     'amharic-wiktionary': {
@@ -101,7 +101,7 @@ $(function(){
       'description': 'Amharic Wiktionary Words -- CC BY-SA'
     },
     'amharic-wiktionary-short': {
-      'name': 'Amharic Short Words Wiktionary',
+      'name': 'Amharic Short-Word Wiktionary',
       'description': 'Amharic Wiktionary Words -- CC BY-SA'
     },
     'arabic-wiktionary': {
@@ -109,7 +109,7 @@ $(function(){
       'description': 'Arabic Wiktionary Words -- CC BY-SA'
     },
     'arabic-wiktionary-short': {
-      'name': 'Arabic Short Words Wiktionary',
+      'name': 'Arabic Short-Word Wiktionary',
       'description': 'Arabic Wiktionary Words -- CC BY-SA'
     },
     'aragonese-wiktionary': {
@@ -117,7 +117,7 @@ $(function(){
       'description': 'Aragonese Wiktionary Words -- CC BY-SA'
     },
     'aragonese-wiktionary-short': {
-      'name': 'Aragonese Short Words Wiktionary',
+      'name': 'Aragonese Short-Word Wiktionary',
       'description': 'Aragonese Wiktionary Words -- CC BY-SA'
     },
     'armenian-wiktionary': {
@@ -125,7 +125,7 @@ $(function(){
       'description': 'Armenian Wiktionary Words -- CC BY-SA'
     },
     'armenian-wiktionary-short': {
-      'name': 'Armenian Short Words Wiktionary',
+      'name': 'Armenian Short-Word Wiktionary',
       'description': 'Armenian Wiktionary Words -- CC BY-SA'
     },
     'avar-wiktionary': {
@@ -133,7 +133,7 @@ $(function(){
       'description': 'Avar Wiktionary Words -- CC BY-SA'
     },
     'avar-wiktionary-short': {
-      'name': 'Avar Short Words Wiktionary',
+      'name': 'Avar Short-Word Wiktionary',
       'description': 'Avar Wiktionary Words -- CC BY-SA'
     },
     'azeri-wiktionary': {
@@ -141,7 +141,7 @@ $(function(){
       'description': 'Azeri Wiktionary Words -- CC BY-SA'
     },
     'azeri-wiktionary-short': {
-      'name': 'Azeri Short Words Wiktionary',
+      'name': 'Azeri Short-Word Wiktionary',
       'description': 'Azeri Wiktionary Words -- CC BY-SA'
     },
     'bashkir-wiktionary': {
@@ -149,7 +149,7 @@ $(function(){
       'description': 'Bashkir Wiktionary Words -- CC BY-SA'
     },
     'bashkir-wiktionary-short': {
-      'name': 'Bashkir Short Words Wiktionary',
+      'name': 'Bashkir Short-Word Wiktionary',
       'description': 'Bashkir Wiktionary Words -- CC BY-SA'
     },
     'basque-wiktionary': {
@@ -157,7 +157,7 @@ $(function(){
       'description': 'Basque Wiktionary Words -- CC BY-SA'
     },
     'basque-wiktionary-short': {
-      'name': 'Basque Short Words Wiktionary',
+      'name': 'Basque Short-Word Wiktionary',
       'description': 'Basque Wiktionary Words -- CC BY-SA'
     },
     'belarusian-wiktionary': {
@@ -165,7 +165,7 @@ $(function(){
       'description': 'Belarusian Wiktionary Words -- CC BY-SA'
     },
     'belarusian-wiktionary-short': {
-      'name': 'Belarusian Short Words Wiktionary',
+      'name': 'Belarusian Short-Word Wiktionary',
       'description': 'Belarusian Wiktionary Words -- CC BY-SA'
     },
     'bengali-wiktionary': {
@@ -173,7 +173,7 @@ $(function(){
       'description': 'Bengali Wiktionary Words -- CC BY-SA'
     },
     'bengali-wiktionary-short': {
-      'name': 'Bengali Short Words Wiktionary',
+      'name': 'Bengali Short-Word Wiktionary',
       'description': 'Bengali Wiktionary Words -- CC BY-SA'
     },
     'breton-wiktionary': {
@@ -181,7 +181,7 @@ $(function(){
       'description': 'Breton Wiktionary Words -- CC BY-SA'
     },
     'breton-wiktionary-short': {
-      'name': 'Breton Short Words Wiktionary',
+      'name': 'Breton Short-Word Wiktionary',
       'description': 'Breton Wiktionary Words -- CC BY-SA'
     },
     'bulgarian-wiktionary': {
@@ -189,7 +189,7 @@ $(function(){
       'description': 'Bulgarian Wiktionary Words -- CC BY-SA'
     },
     'bulgarian-wiktionary-short': {
-      'name': 'Bulgarian Short Words Wiktionary',
+      'name': 'Bulgarian Short-Word Wiktionary',
       'description': 'Bulgarian Wiktionary Words -- CC BY-SA'
     },
     'burmese-wiktionary': {
@@ -197,7 +197,7 @@ $(function(){
       'description': 'Burmese Wiktionary Words -- CC BY-SA'
     },
     'burmese-wiktionary-short': {
-      'name': 'Burmese Short Words Wiktionary',
+      'name': 'Burmese Short-Word Wiktionary',
       'description': 'Burmese Wiktionary Words -- CC BY-SA'
     },
     'catalan-wiktionary': {
@@ -205,7 +205,7 @@ $(function(){
       'description': 'Catalan Wiktionary Words -- CC BY-SA'
     },
     'catalan-wiktionary-short': {
-      'name': 'Catalan Short Words Wiktionary',
+      'name': 'Catalan Short-Word Wiktionary',
       'description': 'Catalan Wiktionary Words -- CC BY-SA'
     },
     'chechen-wiktionary': {
@@ -213,7 +213,7 @@ $(function(){
       'description': 'Chechen Wiktionary Words -- CC BY-SA'
     },
     'chechen-wiktionary-short': {
-      'name': 'Chechen Short Words Wiktionary',
+      'name': 'Chechen Short-Word Wiktionary',
       'description': 'Chechen Wiktionary Words -- CC BY-SA'
     },
     'chinese-wiktionary': {
@@ -221,7 +221,7 @@ $(function(){
       'description': 'Chinese Wiktionary Words -- CC BY-SA'
     },
     'chinese-wiktionary-short': {
-      'name': 'Chinese Short Words Wiktionary',
+      'name': 'Chinese Short-Word Wiktionary',
       'description': 'Chinese Wiktionary Words -- CC BY-SA'
     },
     'cornish-wiktionary': {
@@ -229,7 +229,7 @@ $(function(){
       'description': 'Cornish Wiktionary Words -- CC BY-SA'
     },
     'cornish-wiktionary-short': {
-      'name': 'Cornish Short Words Wiktionary',
+      'name': 'Cornish Short-Word Wiktionary',
       'description': 'Cornish Wiktionary Words -- CC BY-SA'
     },
     'corsican-wiktionary': {
@@ -237,7 +237,7 @@ $(function(){
       'description': 'Corsican Wiktionary Words -- CC BY-SA'
     },
     'corsican-wiktionary-short': {
-      'name': 'Corsican Short Words Wiktionary',
+      'name': 'Corsican Short-Word Wiktionary',
       'description': 'Corsican Wiktionary Words -- CC BY-SA'
     },
     'czech-wiktionary': {
@@ -245,7 +245,7 @@ $(function(){
       'description': 'Czech Wiktionary Words -- CC BY-SA'
     },
     'czech-wiktionary-short': {
-      'name': 'Czech Short Words Wiktionary',
+      'name': 'Czech Short-Word Wiktionary',
       'description': 'Czech Wiktionary Words -- CC BY-SA'
     },
     'danish-wiktionary': {
@@ -253,7 +253,7 @@ $(function(){
       'description': 'Danish Wiktionary Words -- CC BY-SA'
     },
     'danish-wiktionary-short': {
-      'name': 'Danish Short Words Wiktionary',
+      'name': 'Danish Short-Word Wiktionary',
       'description': 'Danish Wiktionary Words -- CC BY-SA'
     },
     'dutch-wiktionary': {
@@ -261,7 +261,7 @@ $(function(){
       'description': 'Dutch Wiktionary Words -- CC BY-SA'
     },
     'dutch-wiktionary-short': {
-      'name': 'Dutch Short Words Wiktionary',
+      'name': 'Dutch Short-Word Wiktionary',
       'description': 'Dutch Wiktionary Words -- CC BY-SA'
     },
     'english-wiktionary': {
@@ -269,7 +269,7 @@ $(function(){
       'description': 'English Wiktionary Words -- CC BY-SA'
     },
     'english-wiktionary-short': {
-      'name': 'English Short Words Wiktionary',
+      'name': 'English Short-Word Wiktionary',
       'description': 'English Wiktionary Words -- CC BY-SA'
     },
     'esperanto-wiktionary': {
@@ -277,7 +277,7 @@ $(function(){
       'description': 'Esperanto Wiktionary Words -- CC BY-SA'
     },
     'esperanto-wiktionary-short': {
-      'name': 'Esperanto Short Words Wiktionary',
+      'name': 'Esperanto Short-Word Wiktionary',
       'description': 'Esperanto Wiktionary Words -- CC BY-SA'
     },
     'estonian-wiktionary': {
@@ -285,7 +285,7 @@ $(function(){
       'description': 'Estonian Wiktionary Words -- CC BY-SA'
     },
     'estonian-wiktionary-short': {
-      'name': 'Estonian Short Words Wiktionary',
+      'name': 'Estonian Short-Word Wiktionary',
       'description': 'Estonian Wiktionary Words -- CC BY-SA'
     },
     'ewe-wiktionary': {
@@ -293,7 +293,7 @@ $(function(){
       'description': 'Ewe Wiktionary Words -- CC BY-SA'
     },
     'ewe-wiktionary-short': {
-      'name': 'Ewe Short Words Wiktionary',
+      'name': 'Ewe Short-Word Wiktionary',
       'description': 'Ewe Wiktionary Words -- CC BY-SA'
     },
     'faroese-wiktionary': {
@@ -301,7 +301,7 @@ $(function(){
       'description': 'Faroese Wiktionary Words -- CC BY-SA'
     },
     'faroese-wiktionary-short': {
-      'name': 'Faroese Short Words Wiktionary',
+      'name': 'Faroese Short-Word Wiktionary',
       'description': 'Faroese Wiktionary Words -- CC BY-SA'
     },
     'finnish-wiktionary': {
@@ -309,7 +309,7 @@ $(function(){
       'description': 'Finnish Wiktionary Words -- CC BY-SA'
     },
     'finnish-wiktionary-short': {
-      'name': 'Finnish Short Words Wiktionary',
+      'name': 'Finnish Short-Word Wiktionary',
       'description': 'Finnish Wiktionary Words -- CC BY-SA'
     },
     'french-wiktionary': {
@@ -317,7 +317,7 @@ $(function(){
       'description': 'French Wiktionary Words -- CC BY-SA'
     },
     'french-wiktionary-short': {
-      'name': 'French Short Words Wiktionary',
+      'name': 'French Short-Word Wiktionary',
       'description': 'French Wiktionary Words -- CC BY-SA'
     },
     'galician-wiktionary': {
@@ -325,7 +325,7 @@ $(function(){
       'description': 'Galician Wiktionary Words -- CC BY-SA'
     },
     'galician-wiktionary-short': {
-      'name': 'Galician Short Words Wiktionary',
+      'name': 'Galician Short-Word Wiktionary',
       'description': 'Galician Wiktionary Words -- CC BY-SA'
     },
     'georgian-wiktionary': {
@@ -333,7 +333,7 @@ $(function(){
       'description': 'Georgian Wiktionary Words -- CC BY-SA'
     },
     'georgian-wiktionary-short': {
-      'name': 'Georgian Short Words Wiktionary',
+      'name': 'Georgian Short-Word Wiktionary',
       'description': 'Georgian Wiktionary Words -- CC BY-SA'
     },
     'german-wiktionary': {
@@ -341,7 +341,7 @@ $(function(){
       'description': 'German Wiktionary Words -- CC BY-SA'
     },
     'german-wiktionary-short': {
-      'name': 'German Short Words Wiktionary',
+      'name': 'German Short-Word Wiktionary',
       'description': 'German Wiktionary Words -- CC BY-SA'
     },
     'greek-wiktionary': {
@@ -349,7 +349,7 @@ $(function(){
       'description': 'Greek Wiktionary Words -- CC BY-SA'
     },
     'greek-wiktionary-short': {
-      'name': 'Greek Short Words Wiktionary',
+      'name': 'Greek Short-Word Wiktionary',
       'description': 'Greek Wiktionary Words -- CC BY-SA'
     },
     'greenlandic-wiktionary': {
@@ -357,7 +357,7 @@ $(function(){
       'description': 'Greenlandic Wiktionary Words -- CC BY-SA'
     },
     'greenlandic-wiktionary-short': {
-      'name': 'Greenlandic Short Words Wiktionary',
+      'name': 'Greenlandic Short-Word Wiktionary',
       'description': 'Greenlandic Wiktionary Words -- CC BY-SA'
     },
     'gujarati-wiktionary': {
@@ -365,7 +365,7 @@ $(function(){
       'description': 'Gujarati Wiktionary Words -- CC BY-SA'
     },
     'gujarati-wiktionary-short': {
-      'name': 'Gujarati Short Words Wiktionary',
+      'name': 'Gujarati Short-Word Wiktionary',
       'description': 'Gujarati Wiktionary Words -- CC BY-SA'
     },
     'hausa-wiktionary': {
@@ -373,7 +373,7 @@ $(function(){
       'description': 'Hausa Wiktionary Words -- CC BY-SA'
     },
     'hausa-wiktionary-short': {
-      'name': 'Hausa Short Words Wiktionary',
+      'name': 'Hausa Short-Word Wiktionary',
       'description': 'Hausa Wiktionary Words -- CC BY-SA'
     },
     'hebrew-wiktionary': {
@@ -381,7 +381,7 @@ $(function(){
       'description': 'Hebrew Wiktionary Words -- CC BY-SA'
     },
     'hebrew-wiktionary-short': {
-      'name': 'Hebrew Short Words Wiktionary',
+      'name': 'Hebrew Short-Word Wiktionary',
       'description': 'Hebrew Wiktionary Words -- CC BY-SA'
     },
     'hindi-wiktionary': {
@@ -389,7 +389,7 @@ $(function(){
       'description': 'Hindi Wiktionary Words -- CC BY-SA'
     },
     'hindi-wiktionary-short': {
-      'name': 'Hindi Short Words Wiktionary',
+      'name': 'Hindi Short-Word Wiktionary',
       'description': 'Hindi Wiktionary Words -- CC BY-SA'
     },
     'hungarian-wiktionary': {
@@ -397,7 +397,7 @@ $(function(){
       'description': 'Hungarian Wiktionary Words -- CC BY-SA'
     },
     'hungarian-wiktionary-short': {
-      'name': 'Hungarian Short Words Wiktionary',
+      'name': 'Hungarian Short-Word Wiktionary',
       'description': 'Hungarian Wiktionary Words -- CC BY-SA'
     },
     'icelandic-wiktionary': {
@@ -405,7 +405,7 @@ $(function(){
       'description': 'Icelandic Wiktionary Words -- CC BY-SA'
     },
     'icelandic-wiktionary-short': {
-      'name': 'Icelandic Short Words Wiktionary',
+      'name': 'Icelandic Short-Word Wiktionary',
       'description': 'Icelandic Wiktionary Words -- CC BY-SA'
     },
     'ido-wiktionary': {
@@ -413,7 +413,7 @@ $(function(){
       'description': 'Ido Wiktionary Words -- CC BY-SA'
     },
     'ido-wiktionary-short': {
-      'name': 'Ido Short Words Wiktionary',
+      'name': 'Ido Short-Word Wiktionary',
       'description': 'Ido Wiktionary Words -- CC BY-SA'
     },
     'indonesian-wiktionary': {
@@ -421,7 +421,7 @@ $(function(){
       'description': 'Indonesian Wiktionary Words -- CC BY-SA'
     },
     'indonesian-wiktionary-short': {
-      'name': 'Indonesian Short Words Wiktionary',
+      'name': 'Indonesian Short-Word Wiktionary',
       'description': 'Indonesian Wiktionary Words -- CC BY-SA'
     },
     'interlingua-wiktionary': {
@@ -429,7 +429,7 @@ $(function(){
       'description': 'Interlingua Wiktionary Words -- CC BY-SA'
     },
     'interlingua-wiktionary-short': {
-      'name': 'Interlingua Short Words Wiktionary',
+      'name': 'Interlingua Short-Word Wiktionary',
       'description': 'Interlingua Wiktionary Words -- CC BY-SA'
     },
     'inuktitut-wiktionary': {
@@ -437,7 +437,7 @@ $(function(){
       'description': 'Inuktitut Wiktionary Words -- CC BY-SA'
     },
     'inuktitut-wiktionary-short': {
-      'name': 'Inuktitut Short Words Wiktionary',
+      'name': 'Inuktitut Short-Word Wiktionary',
       'description': 'Inuktitut Wiktionary Words -- CC BY-SA'
     },
     'irish-wiktionary': {
@@ -445,7 +445,7 @@ $(function(){
       'description': 'Irish Wiktionary Words -- CC BY-SA'
     },
     'irish-wiktionary-short': {
-      'name': 'Irish Short Words Wiktionary',
+      'name': 'Irish Short-Word Wiktionary',
       'description': 'Irish Wiktionary Words -- CC BY-SA'
     },
     'italian-wiktionary': {
@@ -453,7 +453,7 @@ $(function(){
       'description': 'Italian Wiktionary Words -- CC BY-SA'
     },
     'italian-wiktionary-short': {
-      'name': 'Italian Short Words Wiktionary',
+      'name': 'Italian Short-Word Wiktionary',
       'description': 'Italian Wiktionary Words -- CC BY-SA'
     },
     'japanese-wiktionary': {
@@ -461,7 +461,7 @@ $(function(){
       'description': 'Japanese Wiktionary Words -- CC BY-SA'
     },
     'japanese-wiktionary-short': {
-      'name': 'Japanese Short Words Wiktionary',
+      'name': 'Japanese Short-Word Wiktionary',
       'description': 'Japanese Wiktionary Words -- CC BY-SA'
     },
     'kannada-wiktionary': {
@@ -469,7 +469,7 @@ $(function(){
       'description': 'Kannada Wiktionary Words -- CC BY-SA'
     },
     'kannada-wiktionary-short': {
-      'name': 'Kannada Short Words Wiktionary',
+      'name': 'Kannada Short-Word Wiktionary',
       'description': 'Kannada Wiktionary Words -- CC BY-SA'
     },
     'kazakh-wiktionary': {
@@ -477,7 +477,7 @@ $(function(){
       'description': 'Kazakh Wiktionary Words -- CC BY-SA'
     },
     'kazakh-wiktionary-short': {
-      'name': 'Kazakh Short Words Wiktionary',
+      'name': 'Kazakh Short-Word Wiktionary',
       'description': 'Kazakh Wiktionary Words -- CC BY-SA'
     },
     'khmer-wiktionary': {
@@ -485,7 +485,7 @@ $(function(){
       'description': 'Khmer Wiktionary Words -- CC BY-SA'
     },
     'khmer-wiktionary-short': {
-      'name': 'Khmer Short Words Wiktionary',
+      'name': 'Khmer Short-Word Wiktionary',
       'description': 'Khmer Wiktionary Words -- CC BY-SA'
     },
     'korean-wiktionary': {
@@ -493,7 +493,7 @@ $(function(){
       'description': 'Korean Wiktionary Words -- CC BY-SA'
     },
     'korean-wiktionary-short': {
-      'name': 'Korean Short Words Wiktionary',
+      'name': 'Korean Short-Word Wiktionary',
       'description': 'Korean Wiktionary Words -- CC BY-SA'
     },
     'kurdish-wiktionary': {
@@ -501,7 +501,7 @@ $(function(){
       'description': 'Kurdish Wiktionary Words -- CC BY-SA'
     },
     'kurdish-wiktionary-short': {
-      'name': 'Kurdish Short Words Wiktionary',
+      'name': 'Kurdish Short-Word Wiktionary',
       'description': 'Kurdish Wiktionary Words -- CC BY-SA'
     },
     'kyrgyz-wiktionary': {
@@ -509,7 +509,7 @@ $(function(){
       'description': 'Kyrgyz Wiktionary Words -- CC BY-SA'
     },
     'kyrgyz-wiktionary-short': {
-      'name': 'Kyrgyz Short Words Wiktionary',
+      'name': 'Kyrgyz Short-Word Wiktionary',
       'description': 'Kyrgyz Wiktionary Words -- CC BY-SA'
     },
     'lao-wiktionary': {
@@ -517,7 +517,7 @@ $(function(){
       'description': 'Lao Wiktionary Words -- CC BY-SA'
     },
     'lao-wiktionary-short': {
-      'name': 'Lao Short Words Wiktionary',
+      'name': 'Lao Short-Word Wiktionary',
       'description': 'Lao Wiktionary Words -- CC BY-SA'
     },
     'latin-wiktionary': {
@@ -525,7 +525,7 @@ $(function(){
       'description': 'Latin Wiktionary Words -- CC BY-SA'
     },
     'latin-wiktionary-short': {
-      'name': 'Latin Short Words Wiktionary',
+      'name': 'Latin Short-Word Wiktionary',
       'description': 'Latin Wiktionary Words -- CC BY-SA'
     },
     'latvian-wiktionary': {
@@ -533,7 +533,7 @@ $(function(){
       'description': 'Latvian Wiktionary Words -- CC BY-SA'
     },
     'latvian-wiktionary-short': {
-      'name': 'Latvian Short Words Wiktionary',
+      'name': 'Latvian Short-Word Wiktionary',
       'description': 'Latvian Wiktionary Words -- CC BY-SA'
     },
     'limburgish-wiktionary': {
@@ -541,7 +541,7 @@ $(function(){
       'description': 'Limburgish Wiktionary Words -- CC BY-SA'
     },
     'limburgish-wiktionary-short': {
-      'name': 'Limburgish Short Words Wiktionary',
+      'name': 'Limburgish Short-Word Wiktionary',
       'description': 'Limburgish Wiktionary Words -- CC BY-SA'
     },
     'lithuanian-wiktionary': {
@@ -549,7 +549,7 @@ $(function(){
       'description': 'Lithuanian Wiktionary Words -- CC BY-SA'
     },
     'lithuanian-wiktionary-short': {
-      'name': 'Lithuanian Short Words Wiktionary',
+      'name': 'Lithuanian Short-Word Wiktionary',
       'description': 'Lithuanian Wiktionary Words -- CC BY-SA'
     },
     'luxembourgish-wiktionary': {
@@ -557,7 +557,7 @@ $(function(){
       'description': 'Luxembourgish Wiktionary Words -- CC BY-SA'
     },
     'luxembourgish-wiktionary-short': {
-      'name': 'Luxembourgish Short Words Wiktionary',
+      'name': 'Luxembourgish Short-Word Wiktionary',
       'description': 'Luxembourgish Wiktionary Words -- CC BY-SA'
     },
     'macedonian-wiktionary': {
@@ -565,7 +565,7 @@ $(function(){
       'description': 'Macedonian Wiktionary Words -- CC BY-SA'
     },
     'macedonian-wiktionary-short': {
-      'name': 'Macedonian Short Words Wiktionary',
+      'name': 'Macedonian Short-Word Wiktionary',
       'description': 'Macedonian Wiktionary Words -- CC BY-SA'
     },
     'malagasy-wiktionary': {
@@ -573,7 +573,7 @@ $(function(){
       'description': 'Malagasy Wiktionary Words -- CC BY-SA'
     },
     'malagasy-wiktionary-short': {
-      'name': 'Malagasy Short Words Wiktionary',
+      'name': 'Malagasy Short-Word Wiktionary',
       'description': 'Malagasy Wiktionary Words -- CC BY-SA'
     },
     'malay-wiktionary': {
@@ -581,7 +581,7 @@ $(function(){
       'description': 'Malay Wiktionary Words -- CC BY-SA'
     },
     'malay-wiktionary-short': {
-      'name': 'Malay Short Words Wiktionary',
+      'name': 'Malay Short-Word Wiktionary',
       'description': 'Malay Wiktionary Words -- CC BY-SA'
     },
     'malayalam-wiktionary': {
@@ -589,7 +589,7 @@ $(function(){
       'description': 'Malayalam Wiktionary Words -- CC BY-SA'
     },
     'malayalam-wiktionary-short': {
-      'name': 'Malayalam Short Words Wiktionary',
+      'name': 'Malayalam Short-Word Wiktionary',
       'description': 'Malayalam Wiktionary Words -- CC BY-SA'
     },
     'maltese-wiktionary': {
@@ -597,7 +597,7 @@ $(function(){
       'description': 'Maltese Wiktionary Words -- CC BY-SA'
     },
     'maltese-wiktionary-short': {
-      'name': 'Maltese Short Words Wiktionary',
+      'name': 'Maltese Short-Word Wiktionary',
       'description': 'Maltese Wiktionary Words -- CC BY-SA'
     },
     'manx-wiktionary': {
@@ -605,7 +605,7 @@ $(function(){
       'description': 'Manx Wiktionary Words -- CC BY-SA'
     },
     'manx-wiktionary-short': {
-      'name': 'Manx Short Words Wiktionary',
+      'name': 'Manx Short-Word Wiktionary',
       'description': 'Manx Wiktionary Words -- CC BY-SA'
     },
     'maori-wiktionary': {
@@ -613,7 +613,7 @@ $(function(){
       'description': 'Maori Wiktionary Words -- CC BY-SA'
     },
     'maori-wiktionary-short': {
-      'name': 'Maori Short Words Wiktionary',
+      'name': 'Maori Short-Word Wiktionary',
       'description': 'Maori Wiktionary Words -- CC BY-SA'
     },
     'marathi-wiktionary': {
@@ -621,7 +621,7 @@ $(function(){
       'description': 'Marathi Wiktionary Words -- CC BY-SA'
     },
     'marathi-wiktionary-short': {
-      'name': 'Marathi Short Words Wiktionary',
+      'name': 'Marathi Short-Word Wiktionary',
       'description': 'Marathi Wiktionary Words -- CC BY-SA'
     },
     'marshallese-wiktionary': {
@@ -629,7 +629,7 @@ $(function(){
       'description': 'Marshallese Wiktionary Words -- CC BY-SA'
     },
     'marshallese-wiktionary-short': {
-      'name': 'Marshallese Short Words Wiktionary',
+      'name': 'Marshallese Short-Word Wiktionary',
       'description': 'Marshallese Wiktionary Words -- CC BY-SA'
     },
     'mongolian-wiktionary': {
@@ -637,7 +637,7 @@ $(function(){
       'description': 'Mongolian Wiktionary Words -- CC BY-SA'
     },
     'mongolian-wiktionary-short': {
-      'name': 'Mongolian Short Words Wiktionary',
+      'name': 'Mongolian Short-Word Wiktionary',
       'description': 'Mongolian Wiktionary Words -- CC BY-SA'
     },
     'navajo-wiktionary': {
@@ -645,7 +645,7 @@ $(function(){
       'description': 'Navajo Wiktionary Words -- CC BY-SA'
     },
     'navajo-wiktionary-short': {
-      'name': 'Navajo Short Words Wiktionary',
+      'name': 'Navajo Short-Word Wiktionary',
       'description': 'Navajo Wiktionary Words -- CC BY-SA'
     },
     'norwegian-wiktionary': {
@@ -653,7 +653,7 @@ $(function(){
       'description': 'Norwegian Wiktionary Words -- CC BY-SA'
     },
     'norwegian-wiktionary-short': {
-      'name': 'Norwegian Short Words Wiktionary',
+      'name': 'Norwegian Short-Word Wiktionary',
       'description': 'Norwegian Wiktionary Words -- CC BY-SA'
     },
     'occitan-wiktionary': {
@@ -661,7 +661,7 @@ $(function(){
       'description': 'Occitan Wiktionary Words -- CC BY-SA'
     },
     'occitan-wiktionary-short': {
-      'name': 'Occitan Short Words Wiktionary',
+      'name': 'Occitan Short-Word Wiktionary',
       'description': 'Occitan Wiktionary Words -- CC BY-SA'
     },
     'ojibwe-wiktionary': {
@@ -669,7 +669,7 @@ $(function(){
       'description': 'Ojibwe Wiktionary Words -- CC BY-SA'
     },
     'ojibwe-wiktionary-short': {
-      'name': 'Ojibwe Short Words Wiktionary',
+      'name': 'Ojibwe Short-Word Wiktionary',
       'description': 'Ojibwe Wiktionary Words -- CC BY-SA'
     },
     'ossetian-wiktionary': {
@@ -677,7 +677,7 @@ $(function(){
       'description': 'Ossetian Wiktionary Words -- CC BY-SA'
     },
     'ossetian-wiktionary-short': {
-      'name': 'Ossetian Short Words Wiktionary',
+      'name': 'Ossetian Short-Word Wiktionary',
       'description': 'Ossetian Wiktionary Words -- CC BY-SA'
     },
     'pashto-wiktionary': {
@@ -685,7 +685,7 @@ $(function(){
       'description': 'Pashto Wiktionary Words -- CC BY-SA'
     },
     'pashto-wiktionary-short': {
-      'name': 'Pashto Short Words Wiktionary',
+      'name': 'Pashto Short-Word Wiktionary',
       'description': 'Pashto Wiktionary Words -- CC BY-SA'
     },
     'persian-wiktionary': {
@@ -693,7 +693,7 @@ $(function(){
       'description': 'Persian Wiktionary Words -- CC BY-SA'
     },
     'persian-wiktionary-short': {
-      'name': 'Persian Short Words Wiktionary',
+      'name': 'Persian Short-Word Wiktionary',
       'description': 'Persian Wiktionary Words -- CC BY-SA'
     },
     'polish-wiktionary': {
@@ -701,7 +701,7 @@ $(function(){
       'description': 'Polish Wiktionary Words -- CC BY-SA'
     },
     'polish-wiktionary-short': {
-      'name': 'Polish Short Words Wiktionary',
+      'name': 'Polish Short-Word Wiktionary',
       'description': 'Polish Wiktionary Words -- CC BY-SA'
     },
     'portuguese-wiktionary': {
@@ -709,7 +709,7 @@ $(function(){
       'description': 'Portuguese Wiktionary Words -- CC BY-SA'
     },
     'portuguese-wiktionary-short': {
-      'name': 'Portuguese Short Words Wiktionary',
+      'name': 'Portuguese Short-Word Wiktionary',
       'description': 'Portuguese Wiktionary Words -- CC BY-SA'
     },
     'punjabi-wiktionary': {
@@ -717,7 +717,7 @@ $(function(){
       'description': 'Punjabi Wiktionary Words -- CC BY-SA'
     },
     'punjabi-wiktionary-short': {
-      'name': 'Punjabi Short Words Wiktionary',
+      'name': 'Punjabi Short-Word Wiktionary',
       'description': 'Punjabi Wiktionary Words -- CC BY-SA'
     },
     'quechua-wiktionary': {
@@ -725,7 +725,7 @@ $(function(){
       'description': 'Quechua Wiktionary Words -- CC BY-SA'
     },
     'quechua-wiktionary-short': {
-      'name': 'Quechua Short Words Wiktionary',
+      'name': 'Quechua Short-Word Wiktionary',
       'description': 'Quechua Wiktionary Words -- CC BY-SA'
     },
     'romanian-wiktionary': {
@@ -733,7 +733,7 @@ $(function(){
       'description': 'Romanian Wiktionary Words -- CC BY-SA'
     },
     'romanian-wiktionary-short': {
-      'name': 'Romanian Short Words Wiktionary',
+      'name': 'Romanian Short-Word Wiktionary',
       'description': 'Romanian Wiktionary Words -- CC BY-SA'
     },
     'romansch-wiktionary': {
@@ -741,7 +741,7 @@ $(function(){
       'description': 'Romansch Wiktionary Words -- CC BY-SA'
     },
     'romansch-wiktionary-short': {
-      'name': 'Romansch Short Words Wiktionary',
+      'name': 'Romansch Short-Word Wiktionary',
       'description': 'Romansch Wiktionary Words -- CC BY-SA'
     },
     'russian-wiktionary': {
@@ -749,7 +749,7 @@ $(function(){
       'description': 'Russian Wiktionary Words -- CC BY-SA'
     },
     'russian-wiktionary-short': {
-      'name': 'Russian Short Words Wiktionary',
+      'name': 'Russian Short-Word Wiktionary',
       'description': 'Russian Wiktionary Words -- CC BY-SA'
     },
     'sanskrit-wiktionary': {
@@ -757,7 +757,7 @@ $(function(){
       'description': 'Sanskrit Wiktionary Words -- CC BY-SA'
     },
     'sanskrit-wiktionary-short': {
-      'name': 'Sanskrit Short Words Wiktionary',
+      'name': 'Sanskrit Short-Word Wiktionary',
       'description': 'Sanskrit Wiktionary Words -- CC BY-SA'
     },
     'serbo-croatian-wiktionary': {
@@ -765,7 +765,7 @@ $(function(){
       'description': 'Serbo-Croatian Wiktionary Words -- CC BY-SA'
     },
     'serbo-croatian-wiktionary-short': {
-      'name': 'Serbo-Croatian Short Words Wiktionary',
+      'name': 'Serbo-Croatian Short-Word Wiktionary',
       'description': 'Serbo-Croatian Wiktionary Words -- CC BY-SA'
     },
     'sinhalese-wiktionary': {
@@ -773,7 +773,7 @@ $(function(){
       'description': 'Sinhalese Wiktionary Words -- CC BY-SA'
     },
     'sinhalese-wiktionary-short': {
-      'name': 'Sinhalese Short Words Wiktionary',
+      'name': 'Sinhalese Short-Word Wiktionary',
       'description': 'Sinhalese Wiktionary Words -- CC BY-SA'
     },
     'slovak-wiktionary': {
@@ -781,7 +781,7 @@ $(function(){
       'description': 'Slovak Wiktionary Words -- CC BY-SA'
     },
     'slovak-wiktionary-short': {
-      'name': 'Slovak Short Words Wiktionary',
+      'name': 'Slovak Short-Word Wiktionary',
       'description': 'Slovak Wiktionary Words -- CC BY-SA'
     },
     'slovene-wiktionary': {
@@ -789,7 +789,7 @@ $(function(){
       'description': 'Slovene Wiktionary Words -- CC BY-SA'
     },
     'slovene-wiktionary-short': {
-      'name': 'Slovene Short Words Wiktionary',
+      'name': 'Slovene Short-Word Wiktionary',
       'description': 'Slovene Wiktionary Words -- CC BY-SA'
     },
     'spanish-wiktionary': {
@@ -797,15 +797,23 @@ $(function(){
       'description': 'Spanish Wiktionary Words -- CC BY-SA'
     },
     'spanish-wiktionary-short': {
-      'name': 'Spanish Short Words Wiktionary',
+      'name': 'Spanish Short-Word Wiktionary',
       'description': 'Spanish Wiktionary Words -- CC BY-SA'
+    },
+    'sundanese-wiktionary': {
+      'name': 'Sundanese Wiktionary',
+      'description': 'Sundanese Wiktionary Words -- CC BY-SA'
+    },
+    'sundanese-wiktionary-short': {
+      'name': 'Sundanese Short-Word Wiktionary',
+      'description': 'Sundanese Wiktionary Words -- CC BY-SA'
     },
     'swahili-wiktionary': {
       'name': 'Swahili Wiktionary',
       'description': 'Swahili Wiktionary Words -- CC BY-SA'
     },
     'swahili-wiktionary-short': {
-      'name': 'Swahili Short Words Wiktionary',
+      'name': 'Swahili Short-Word Wiktionary',
       'description': 'Swahili Wiktionary Words -- CC BY-SA'
     },
     'swedish-wiktionary': {
@@ -813,7 +821,7 @@ $(function(){
       'description': 'Swedish Wiktionary Words -- CC BY-SA'
     },
     'swedish-wiktionary-short': {
-      'name': 'Swedish Short Words Wiktionary',
+      'name': 'Swedish Short-Word Wiktionary',
       'description': 'Swedish Wiktionary Words -- CC BY-SA'
     },
     'tagalog-wiktionary': {
@@ -821,7 +829,7 @@ $(function(){
       'description': 'Tagalog Wiktionary Words -- CC BY-SA'
     },
     'tagalog-wiktionary-short': {
-      'name': 'Tagalog Short Words Wiktionary',
+      'name': 'Tagalog Short-Word Wiktionary',
       'description': 'Tagalog Wiktionary Words -- CC BY-SA'
     },
     'tahitian-wiktionary': {
@@ -829,7 +837,7 @@ $(function(){
       'description': 'Tahitian Wiktionary Words -- CC BY-SA'
     },
     'tahitian-wiktionary-short': {
-      'name': 'Tahitian Short Words Wiktionary',
+      'name': 'Tahitian Short-Word Wiktionary',
       'description': 'Tahitian Wiktionary Words -- CC BY-SA'
     },
     'tajik-wiktionary': {
@@ -837,7 +845,7 @@ $(function(){
       'description': 'Tajik Wiktionary Words -- CC BY-SA'
     },
     'tajik-wiktionary-short': {
-      'name': 'Tajik Short Words Wiktionary',
+      'name': 'Tajik Short-Word Wiktionary',
       'description': 'Tajik Wiktionary Words -- CC BY-SA'
     },
     'tamil-wiktionary': {
@@ -845,7 +853,7 @@ $(function(){
       'description': 'Tamil Wiktionary Words -- CC BY-SA'
     },
     'tamil-wiktionary-short': {
-      'name': 'Tamil Short Words Wiktionary',
+      'name': 'Tamil Short-Word Wiktionary',
       'description': 'Tamil Wiktionary Words -- CC BY-SA'
     },
     'tatar-wiktionary': {
@@ -853,7 +861,7 @@ $(function(){
       'description': 'Tatar Wiktionary Words -- CC BY-SA'
     },
     'tatar-wiktionary-short': {
-      'name': 'Tatar Short Words Wiktionary',
+      'name': 'Tatar Short-Word Wiktionary',
       'description': 'Tatar Wiktionary Words -- CC BY-SA'
     },
     'telugu-wiktionary': {
@@ -861,7 +869,7 @@ $(function(){
       'description': 'Telugu Wiktionary Words -- CC BY-SA'
     },
     'telugu-wiktionary-short': {
-      'name': 'Telugu Short Words Wiktionary',
+      'name': 'Telugu Short-Word Wiktionary',
       'description': 'Telugu Wiktionary Words -- CC BY-SA'
     },
     'thai-wiktionary': {
@@ -869,7 +877,7 @@ $(function(){
       'description': 'Thai Wiktionary Words -- CC BY-SA'
     },
     'thai-wiktionary-short': {
-      'name': 'Thai Short Words Wiktionary',
+      'name': 'Thai Short-Word Wiktionary',
       'description': 'Thai Wiktionary Words -- CC BY-SA'
     },
     'tibetan-wiktionary': {
@@ -877,7 +885,7 @@ $(function(){
       'description': 'Tibetan Wiktionary Words -- CC BY-SA'
     },
     'tibetan-wiktionary-short': {
-      'name': 'Tibetan Short Words Wiktionary',
+      'name': 'Tibetan Short-Word Wiktionary',
       'description': 'Tibetan Wiktionary Words -- CC BY-SA'
     },
     'tigrinya-wiktionary': {
@@ -885,7 +893,7 @@ $(function(){
       'description': 'Tigrinya Wiktionary Words -- CC BY-SA'
     },
     'tigrinya-wiktionary-short': {
-      'name': 'Tigrinya Short Words Wiktionary',
+      'name': 'Tigrinya Short-Word Wiktionary',
       'description': 'Tigrinya Wiktionary Words -- CC BY-SA'
     },
     'turkish-wiktionary': {
@@ -893,7 +901,7 @@ $(function(){
       'description': 'Turkish Wiktionary Words -- CC BY-SA'
     },
     'turkish-wiktionary-short': {
-      'name': 'Turkish Short Words Wiktionary',
+      'name': 'Turkish Short-Word Wiktionary',
       'description': 'Turkish Wiktionary Words -- CC BY-SA'
     },
     'turkmen-wiktionary': {
@@ -901,7 +909,7 @@ $(function(){
       'description': 'Turkmen Wiktionary Words -- CC BY-SA'
     },
     'turkmen-wiktionary-short': {
-      'name': 'Turkmen Short Words Wiktionary',
+      'name': 'Turkmen Short-Word Wiktionary',
       'description': 'Turkmen Wiktionary Words -- CC BY-SA'
     },
     'ukrainian-wiktionary': {
@@ -909,7 +917,7 @@ $(function(){
       'description': 'Ukrainian Wiktionary Words -- CC BY-SA'
     },
     'ukrainian-wiktionary-short': {
-      'name': 'Ukrainian Short Words Wiktionary',
+      'name': 'Ukrainian Short-Word Wiktionary',
       'description': 'Ukrainian Wiktionary Words -- CC BY-SA'
     },
     'urdu-wiktionary': {
@@ -917,7 +925,7 @@ $(function(){
       'description': 'Urdu Wiktionary Words -- CC BY-SA'
     },
     'urdu-wiktionary-short': {
-      'name': 'Urdu Short Words Wiktionary',
+      'name': 'Urdu Short-Word Wiktionary',
       'description': 'Urdu Wiktionary Words -- CC BY-SA'
     },
     'uyghur-wiktionary': {
@@ -925,7 +933,7 @@ $(function(){
       'description': 'Uyghur Wiktionary Words -- CC BY-SA'
     },
     'uyghur-wiktionary-short': {
-      'name': 'Uyghur Short Words Wiktionary',
+      'name': 'Uyghur Short-Word Wiktionary',
       'description': 'Uyghur Wiktionary Words -- CC BY-SA'
     },
     'uzbek-wiktionary': {
@@ -933,7 +941,7 @@ $(function(){
       'description': 'Uzbek Wiktionary Words -- CC BY-SA'
     },
     'uzbek-wiktionary-short': {
-      'name': 'Uzbek Short Words Wiktionary',
+      'name': 'Uzbek Short-Word Wiktionary',
       'description': 'Uzbek Wiktionary Words -- CC BY-SA'
     },
     'vietnamese-wiktionary': {
@@ -941,23 +949,15 @@ $(function(){
       'description': 'Vietnamese Wiktionary Words -- CC BY-SA'
     },
     'vietnamese-wiktionary-short': {
-      'name': 'Vietnamese Short Words Wiktionary',
+      'name': 'Vietnamese Short-Word Wiktionary',
       'description': 'Vietnamese Wiktionary Words -- CC BY-SA'
     },
-    //'volapük-wiktionary': {
-    //  'name': 'Volapük Wiktionary',
-    //  'description': 'Volapük Wiktionary Words -- CC BY-SA'
-    //},
-    //'volapük-wiktionary-short': {
-    //  'name': 'Volapük Short Words Wiktionary',
-    //  'description': 'Volapük Wiktionary Words -- CC BY-SA'
-    //},
     'walloon-wiktionary': {
       'name': 'Walloon Wiktionary',
       'description': 'Walloon Wiktionary Words -- CC BY-SA'
     },
     'walloon-wiktionary-short': {
-      'name': 'Walloon Short Words Wiktionary',
+      'name': 'Walloon Short-Word Wiktionary',
       'description': 'Walloon Wiktionary Words -- CC BY-SA'
     },
     'welsh-wiktionary': {
@@ -965,7 +965,7 @@ $(function(){
       'description': 'Welsh Wiktionary Words -- CC BY-SA'
     },
     'welsh-wiktionary-short': {
-      'name': 'Welsh Short Words Wiktionary',
+      'name': 'Welsh Short-Word Wiktionary',
       'description': 'Welsh Wiktionary Words -- CC BY-SA'
     },
     'yiddish-wiktionary': {
@@ -973,7 +973,7 @@ $(function(){
       'description': 'Yiddish Wiktionary Words -- CC BY-SA'
     },
     'yiddish-wiktionary-short': {
-      'name': 'Yiddish Short Words Wiktionary',
+      'name': 'Yiddish Short-Word Wiktionary',
       'description': 'Yiddish Wiktionary Words -- CC BY-SA'
     },
     'yoruba-wiktionary': {
@@ -981,7 +981,7 @@ $(function(){
       'description': 'Yoruba Wiktionary Words -- CC BY-SA'
     },
     'yoruba-wiktionary-short': {
-      'name': 'Yoruba Short Words Wiktionary',
+      'name': 'Yoruba Short-Word Wiktionary',
       'description': 'Yoruba Wiktionary Words -- CC BY-SA'
     },
     'zulu-wiktionary': {
@@ -989,7 +989,7 @@ $(function(){
       'description': 'Zulu Wiktionary Words -- CC BY-SA'
     },
     'zulu-wiktionary-short': {
-      'name': 'Zulu Short Words Wiktionary',
+      'name': 'Zulu Short-Word Wiktionary',
       'description': 'Zulu Wiktionary Words -- CC BY-SA'
     },
   };
