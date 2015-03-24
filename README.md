@@ -2,9 +2,9 @@
 
 A tool that helps you generate high-entropy passphrases and memorize them using a technique called spaced repetition.
 
-Executables for Win32 and OS X are available under Releases.
+Executables for Linux, OS X and Win32 are available under Releases.
 
-<center>
+<div style="text-align:center">
 ![Passphrases OS X](https://raw.github.com/StephenGenusa/passphrases/master/passphrases.png)
 <br />Passphrases on OS X
 
@@ -13,5 +13,5 @@ Executables for Win32 and OS X are available under Releases.
 
 ![Partial Language Menu](https://raw.github.com/StephenGenusa/passphrases/master/partial-language-menu.png)
 <br />Partial Language Menu
-</center>
+</div>
 
