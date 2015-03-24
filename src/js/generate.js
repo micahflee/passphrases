@@ -72,517 +72,925 @@ $(function(){
       'name': 'Svensk Diceware',
       'description': 'Svensk ordbok av Magnus Bodin'
     },
-    'Cornish-wiktionary': {
-      'name': 'Cornish-wiktionary Wiktionary',
-      'description': 'Cornish-wiktionary Wiktionary Words -- CC BY-SA'
+    'abkhaz-wiktionary': {
+      'name': 'Abkhaz Wiktionary',
+      'description': 'Abkhaz Wiktionary Words -- CC BY-SA'
     },
-    'Cornish-wiktionary-short': {
-      'name': 'Cornish-wiktionary-short Wiktionary',
-      'description': 'Cornish-wiktionary-short Wiktionary Words -- CC BY-SA'
+    'abkhaz-wiktionary-short': {
+      'name': 'Abkhaz Short Words Wiktionary',
+      'description': 'Abkhaz Wiktionary Words -- CC BY-SA'
     },
-    'French-wiktionary': {
-      'name': 'French-wiktionary Wiktionary',
-      'description': 'French-wiktionary Wiktionary Words -- CC BY-SA'
+    'afrikaans-wiktionary': {
+      'name': 'Afrikaans Wiktionary',
+      'description': 'Afrikaans Wiktionary Words -- CC BY-SA'
     },
-    'French-wiktionary-short': {
-      'name': 'French-wiktionary-short Wiktionary',
-      'description': 'French-wiktionary-short Wiktionary Words -- CC BY-SA'
+    'afrikaans-wiktionary-short': {
+      'name': 'Afrikaans Short Words Wiktionary',
+      'description': 'Afrikaans Wiktionary Words -- CC BY-SA'
     },
-    'Finnish-wiktionary': {
-      'name': 'Finnish-wiktionary Wiktionary',
-      'description': 'Finnish-wiktionary Wiktionary Words -- CC BY-SA'
+    'albanian-wiktionary': {
+      'name': 'Albanian Wiktionary',
+      'description': 'Albanian Wiktionary Words -- CC BY-SA'
     },
-    'Finnish-wiktionary-short': {
-      'name': 'Finnish-wiktionary-short Wiktionary',
-      'description': 'Finnish-wiktionary-short Wiktionary Words -- CC BY-SA'
+    'albanian-wiktionary-short': {
+      'name': 'Albanian Short Words Wiktionary',
+      'description': 'Albanian Wiktionary Words -- CC BY-SA'
     },
-    'Sundanese-wiktionary': {
-      'name': 'Sundanese-wiktionary Wiktionary',
-      'description': 'Sundanese-wiktionary Wiktionary Words -- CC BY-SA'
+    'amharic-wiktionary': {
+      'name': 'Amharic Wiktionary',
+      'description': 'Amharic Wiktionary Words -- CC BY-SA'
     },
-    'Sundanese-wiktionary-short': {
-      'name': 'Sundanese-wiktionary-short Wiktionary',
-      'description': 'Sundanese-wiktionary-short Wiktionary Words -- CC BY-SA'
+    'amharic-wiktionary-short': {
+      'name': 'Amharic Short Words Wiktionary',
+      'description': 'Amharic Wiktionary Words -- CC BY-SA'
     },
-    'Albanian-wiktionary': {
-      'name': 'Albanian-wiktionary Wiktionary',
-      'description': 'Albanian-wiktionary Wiktionary Words -- CC BY-SA'
+    'arabic-wiktionary': {
+      'name': 'Arabic Wiktionary',
+      'description': 'Arabic Wiktionary Words -- CC BY-SA'
     },
-    'Albanian-wiktionary-short': {
-      'name': 'Albanian-wiktionary-short Wiktionary',
-      'description': 'Albanian-wiktionary-short Wiktionary Words -- CC BY-SA'
+    'arabic-wiktionary-short': {
+      'name': 'Arabic Short Words Wiktionary',
+      'description': 'Arabic Wiktionary Words -- CC BY-SA'
     },
-    'Tagalog-wiktionary': {
-      'name': 'Tagalog-wiktionary Wiktionary',
-      'description': 'Tagalog-wiktionary Wiktionary Words -- CC BY-SA'
+    'aragonese-wiktionary': {
+      'name': 'Aragonese Wiktionary',
+      'description': 'Aragonese Wiktionary Words -- CC BY-SA'
     },
-    'Tagalog-wiktionary-short': {
-      'name': 'Tagalog-wiktionary-short Wiktionary',
-      'description': 'Tagalog-wiktionary-short Wiktionary Words -- CC BY-SA'
+    'aragonese-wiktionary-short': {
+      'name': 'Aragonese Short Words Wiktionary',
+      'description': 'Aragonese Wiktionary Words -- CC BY-SA'
     },
-    'Italian-wiktionary': {
-      'name': 'Italian-wiktionary Wiktionary',
-      'description': 'Italian-wiktionary Wiktionary Words -- CC BY-SA'
+    'armenian-wiktionary': {
+      'name': 'Armenian Wiktionary',
+      'description': 'Armenian Wiktionary Words -- CC BY-SA'
     },
-    'Italian-wiktionary-short': {
-      'name': 'Italian-wiktionary-short Wiktionary',
-      'description': 'Italian-wiktionary-short Wiktionary Words -- CC BY-SA'
+    'armenian-wiktionary-short': {
+      'name': 'Armenian Short Words Wiktionary',
+      'description': 'Armenian Wiktionary Words -- CC BY-SA'
     },
-    'Afrikaans-wiktionary': {
-      'name': 'Afrikaans-wiktionary Wiktionary',
-      'description': 'Afrikaans-wiktionary Wiktionary Words -- CC BY-SA'
+    'avar-wiktionary': {
+      'name': 'Avar Wiktionary',
+      'description': 'Avar Wiktionary Words -- CC BY-SA'
     },
-    'Afrikaans-wiktionary-short': {
-      'name': 'Afrikaans-wiktionary-short Wiktionary',
-      'description': 'Afrikaans-wiktionary-short Wiktionary Words -- CC BY-SA'
+    'avar-wiktionary-short': {
+      'name': 'Avar Short Words Wiktionary',
+      'description': 'Avar Wiktionary Words -- CC BY-SA'
     },
-    'Occitan-wiktionary': {
-      'name': 'Occitan-wiktionary Wiktionary',
-      'description': 'Occitan-wiktionary Wiktionary Words -- CC BY-SA'
+    'azeri-wiktionary': {
+      'name': 'Azeri Wiktionary',
+      'description': 'Azeri Wiktionary Words -- CC BY-SA'
     },
-    'Occitan-wiktionary-short': {
-      'name': 'Occitan-wiktionary-short Wiktionary',
-      'description': 'Occitan-wiktionary-short Wiktionary Words -- CC BY-SA'
+    'azeri-wiktionary-short': {
+      'name': 'Azeri Short Words Wiktionary',
+      'description': 'Azeri Wiktionary Words -- CC BY-SA'
     },
-    //'Volapük-wiktionary': {
-    //  'name': 'Volapük-wiktionary Wiktionary',
-    //  'description': 'Volapük-wiktionary Wiktionary Words -- CC BY-SA'
+    'bashkir-wiktionary': {
+      'name': 'Bashkir Wiktionary',
+      'description': 'Bashkir Wiktionary Words -- CC BY-SA'
+    },
+    'bashkir-wiktionary-short': {
+      'name': 'Bashkir Short Words Wiktionary',
+      'description': 'Bashkir Wiktionary Words -- CC BY-SA'
+    },
+    'basque-wiktionary': {
+      'name': 'Basque Wiktionary',
+      'description': 'Basque Wiktionary Words -- CC BY-SA'
+    },
+    'basque-wiktionary-short': {
+      'name': 'Basque Short Words Wiktionary',
+      'description': 'Basque Wiktionary Words -- CC BY-SA'
+    },
+    'belarusian-wiktionary': {
+      'name': 'Belarusian Wiktionary',
+      'description': 'Belarusian Wiktionary Words -- CC BY-SA'
+    },
+    'belarusian-wiktionary-short': {
+      'name': 'Belarusian Short Words Wiktionary',
+      'description': 'Belarusian Wiktionary Words -- CC BY-SA'
+    },
+    'bengali-wiktionary': {
+      'name': 'Bengali Wiktionary',
+      'description': 'Bengali Wiktionary Words -- CC BY-SA'
+    },
+    'bengali-wiktionary-short': {
+      'name': 'Bengali Short Words Wiktionary',
+      'description': 'Bengali Wiktionary Words -- CC BY-SA'
+    },
+    'breton-wiktionary': {
+      'name': 'Breton Wiktionary',
+      'description': 'Breton Wiktionary Words -- CC BY-SA'
+    },
+    'breton-wiktionary-short': {
+      'name': 'Breton Short Words Wiktionary',
+      'description': 'Breton Wiktionary Words -- CC BY-SA'
+    },
+    'bulgarian-wiktionary': {
+      'name': 'Bulgarian Wiktionary',
+      'description': 'Bulgarian Wiktionary Words -- CC BY-SA'
+    },
+    'bulgarian-wiktionary-short': {
+      'name': 'Bulgarian Short Words Wiktionary',
+      'description': 'Bulgarian Wiktionary Words -- CC BY-SA'
+    },
+    'burmese-wiktionary': {
+      'name': 'Burmese Wiktionary',
+      'description': 'Burmese Wiktionary Words -- CC BY-SA'
+    },
+    'burmese-wiktionary-short': {
+      'name': 'Burmese Short Words Wiktionary',
+      'description': 'Burmese Wiktionary Words -- CC BY-SA'
+    },
+    'catalan-wiktionary': {
+      'name': 'Catalan Wiktionary',
+      'description': 'Catalan Wiktionary Words -- CC BY-SA'
+    },
+    'catalan-wiktionary-short': {
+      'name': 'Catalan Short Words Wiktionary',
+      'description': 'Catalan Wiktionary Words -- CC BY-SA'
+    },
+    'chechen-wiktionary': {
+      'name': 'Chechen Wiktionary',
+      'description': 'Chechen Wiktionary Words -- CC BY-SA'
+    },
+    'chechen-wiktionary-short': {
+      'name': 'Chechen Short Words Wiktionary',
+      'description': 'Chechen Wiktionary Words -- CC BY-SA'
+    },
+    'chinese-wiktionary': {
+      'name': 'Chinese Wiktionary',
+      'description': 'Chinese Wiktionary Words -- CC BY-SA'
+    },
+    'chinese-wiktionary-short': {
+      'name': 'Chinese Short Words Wiktionary',
+      'description': 'Chinese Wiktionary Words -- CC BY-SA'
+    },
+    'cornish-wiktionary': {
+      'name': 'Cornish Wiktionary',
+      'description': 'Cornish Wiktionary Words -- CC BY-SA'
+    },
+    'cornish-wiktionary-short': {
+      'name': 'Cornish Short Words Wiktionary',
+      'description': 'Cornish Wiktionary Words -- CC BY-SA'
+    },
+    'corsican-wiktionary': {
+      'name': 'Corsican Wiktionary',
+      'description': 'Corsican Wiktionary Words -- CC BY-SA'
+    },
+    'corsican-wiktionary-short': {
+      'name': 'Corsican Short Words Wiktionary',
+      'description': 'Corsican Wiktionary Words -- CC BY-SA'
+    },
+    'czech-wiktionary': {
+      'name': 'Czech Wiktionary',
+      'description': 'Czech Wiktionary Words -- CC BY-SA'
+    },
+    'czech-wiktionary-short': {
+      'name': 'Czech Short Words Wiktionary',
+      'description': 'Czech Wiktionary Words -- CC BY-SA'
+    },
+    'danish-wiktionary': {
+      'name': 'Danish Wiktionary',
+      'description': 'Danish Wiktionary Words -- CC BY-SA'
+    },
+    'danish-wiktionary-short': {
+      'name': 'Danish Short Words Wiktionary',
+      'description': 'Danish Wiktionary Words -- CC BY-SA'
+    },
+    'dutch-wiktionary': {
+      'name': 'Dutch Wiktionary',
+      'description': 'Dutch Wiktionary Words -- CC BY-SA'
+    },
+    'dutch-wiktionary-short': {
+      'name': 'Dutch Short Words Wiktionary',
+      'description': 'Dutch Wiktionary Words -- CC BY-SA'
+    },
+    'english-wiktionary': {
+      'name': 'English Wiktionary',
+      'description': 'English Wiktionary Words -- CC BY-SA'
+    },
+    'english-wiktionary-short': {
+      'name': 'English Short Words Wiktionary',
+      'description': 'English Wiktionary Words -- CC BY-SA'
+    },
+    'esperanto-wiktionary': {
+      'name': 'Esperanto Wiktionary',
+      'description': 'Esperanto Wiktionary Words -- CC BY-SA'
+    },
+    'esperanto-wiktionary-short': {
+      'name': 'Esperanto Short Words Wiktionary',
+      'description': 'Esperanto Wiktionary Words -- CC BY-SA'
+    },
+    'estonian-wiktionary': {
+      'name': 'Estonian Wiktionary',
+      'description': 'Estonian Wiktionary Words -- CC BY-SA'
+    },
+    'estonian-wiktionary-short': {
+      'name': 'Estonian Short Words Wiktionary',
+      'description': 'Estonian Wiktionary Words -- CC BY-SA'
+    },
+    'ewe-wiktionary': {
+      'name': 'Ewe Wiktionary',
+      'description': 'Ewe Wiktionary Words -- CC BY-SA'
+    },
+    'ewe-wiktionary-short': {
+      'name': 'Ewe Short Words Wiktionary',
+      'description': 'Ewe Wiktionary Words -- CC BY-SA'
+    },
+    'faroese-wiktionary': {
+      'name': 'Faroese Wiktionary',
+      'description': 'Faroese Wiktionary Words -- CC BY-SA'
+    },
+    'faroese-wiktionary-short': {
+      'name': 'Faroese Short Words Wiktionary',
+      'description': 'Faroese Wiktionary Words -- CC BY-SA'
+    },
+    'finnish-wiktionary': {
+      'name': 'Finnish Wiktionary',
+      'description': 'Finnish Wiktionary Words -- CC BY-SA'
+    },
+    'finnish-wiktionary-short': {
+      'name': 'Finnish Short Words Wiktionary',
+      'description': 'Finnish Wiktionary Words -- CC BY-SA'
+    },
+    'french-wiktionary': {
+      'name': 'French Wiktionary',
+      'description': 'French Wiktionary Words -- CC BY-SA'
+    },
+    'french-wiktionary-short': {
+      'name': 'French Short Words Wiktionary',
+      'description': 'French Wiktionary Words -- CC BY-SA'
+    },
+    'galician-wiktionary': {
+      'name': 'Galician Wiktionary',
+      'description': 'Galician Wiktionary Words -- CC BY-SA'
+    },
+    'galician-wiktionary-short': {
+      'name': 'Galician Short Words Wiktionary',
+      'description': 'Galician Wiktionary Words -- CC BY-SA'
+    },
+    'georgian-wiktionary': {
+      'name': 'Georgian Wiktionary',
+      'description': 'Georgian Wiktionary Words -- CC BY-SA'
+    },
+    'georgian-wiktionary-short': {
+      'name': 'Georgian Short Words Wiktionary',
+      'description': 'Georgian Wiktionary Words -- CC BY-SA'
+    },
+    'german-wiktionary': {
+      'name': 'German Wiktionary',
+      'description': 'German Wiktionary Words -- CC BY-SA'
+    },
+    'german-wiktionary-short': {
+      'name': 'German Short Words Wiktionary',
+      'description': 'German Wiktionary Words -- CC BY-SA'
+    },
+    'greek-wiktionary': {
+      'name': 'Greek Wiktionary',
+      'description': 'Greek Wiktionary Words -- CC BY-SA'
+    },
+    'greek-wiktionary-short': {
+      'name': 'Greek Short Words Wiktionary',
+      'description': 'Greek Wiktionary Words -- CC BY-SA'
+    },
+    'greenlandic-wiktionary': {
+      'name': 'Greenlandic Wiktionary',
+      'description': 'Greenlandic Wiktionary Words -- CC BY-SA'
+    },
+    'greenlandic-wiktionary-short': {
+      'name': 'Greenlandic Short Words Wiktionary',
+      'description': 'Greenlandic Wiktionary Words -- CC BY-SA'
+    },
+    'gujarati-wiktionary': {
+      'name': 'Gujarati Wiktionary',
+      'description': 'Gujarati Wiktionary Words -- CC BY-SA'
+    },
+    'gujarati-wiktionary-short': {
+      'name': 'Gujarati Short Words Wiktionary',
+      'description': 'Gujarati Wiktionary Words -- CC BY-SA'
+    },
+    'hausa-wiktionary': {
+      'name': 'Hausa Wiktionary',
+      'description': 'Hausa Wiktionary Words -- CC BY-SA'
+    },
+    'hausa-wiktionary-short': {
+      'name': 'Hausa Short Words Wiktionary',
+      'description': 'Hausa Wiktionary Words -- CC BY-SA'
+    },
+    'hebrew-wiktionary': {
+      'name': 'Hebrew Wiktionary',
+      'description': 'Hebrew Wiktionary Words -- CC BY-SA'
+    },
+    'hebrew-wiktionary-short': {
+      'name': 'Hebrew Short Words Wiktionary',
+      'description': 'Hebrew Wiktionary Words -- CC BY-SA'
+    },
+    'hindi-wiktionary': {
+      'name': 'Hindi Wiktionary',
+      'description': 'Hindi Wiktionary Words -- CC BY-SA'
+    },
+    'hindi-wiktionary-short': {
+      'name': 'Hindi Short Words Wiktionary',
+      'description': 'Hindi Wiktionary Words -- CC BY-SA'
+    },
+    'hungarian-wiktionary': {
+      'name': 'Hungarian Wiktionary',
+      'description': 'Hungarian Wiktionary Words -- CC BY-SA'
+    },
+    'hungarian-wiktionary-short': {
+      'name': 'Hungarian Short Words Wiktionary',
+      'description': 'Hungarian Wiktionary Words -- CC BY-SA'
+    },
+    'icelandic-wiktionary': {
+      'name': 'Icelandic Wiktionary',
+      'description': 'Icelandic Wiktionary Words -- CC BY-SA'
+    },
+    'icelandic-wiktionary-short': {
+      'name': 'Icelandic Short Words Wiktionary',
+      'description': 'Icelandic Wiktionary Words -- CC BY-SA'
+    },
+    'ido-wiktionary': {
+      'name': 'Ido Wiktionary',
+      'description': 'Ido Wiktionary Words -- CC BY-SA'
+    },
+    'ido-wiktionary-short': {
+      'name': 'Ido Short Words Wiktionary',
+      'description': 'Ido Wiktionary Words -- CC BY-SA'
+    },
+    'indonesian-wiktionary': {
+      'name': 'Indonesian Wiktionary',
+      'description': 'Indonesian Wiktionary Words -- CC BY-SA'
+    },
+    'indonesian-wiktionary-short': {
+      'name': 'Indonesian Short Words Wiktionary',
+      'description': 'Indonesian Wiktionary Words -- CC BY-SA'
+    },
+    'interlingua-wiktionary': {
+      'name': 'Interlingua Wiktionary',
+      'description': 'Interlingua Wiktionary Words -- CC BY-SA'
+    },
+    'interlingua-wiktionary-short': {
+      'name': 'Interlingua Short Words Wiktionary',
+      'description': 'Interlingua Wiktionary Words -- CC BY-SA'
+    },
+    'inuktitut-wiktionary': {
+      'name': 'Inuktitut Wiktionary',
+      'description': 'Inuktitut Wiktionary Words -- CC BY-SA'
+    },
+    'inuktitut-wiktionary-short': {
+      'name': 'Inuktitut Short Words Wiktionary',
+      'description': 'Inuktitut Wiktionary Words -- CC BY-SA'
+    },
+    'irish-wiktionary': {
+      'name': 'Irish Wiktionary',
+      'description': 'Irish Wiktionary Words -- CC BY-SA'
+    },
+    'irish-wiktionary-short': {
+      'name': 'Irish Short Words Wiktionary',
+      'description': 'Irish Wiktionary Words -- CC BY-SA'
+    },
+    'italian-wiktionary': {
+      'name': 'Italian Wiktionary',
+      'description': 'Italian Wiktionary Words -- CC BY-SA'
+    },
+    'italian-wiktionary-short': {
+      'name': 'Italian Short Words Wiktionary',
+      'description': 'Italian Wiktionary Words -- CC BY-SA'
+    },
+    'japanese-wiktionary': {
+      'name': 'Japanese Wiktionary',
+      'description': 'Japanese Wiktionary Words -- CC BY-SA'
+    },
+    'japanese-wiktionary-short': {
+      'name': 'Japanese Short Words Wiktionary',
+      'description': 'Japanese Wiktionary Words -- CC BY-SA'
+    },
+    'kannada-wiktionary': {
+      'name': 'Kannada Wiktionary',
+      'description': 'Kannada Wiktionary Words -- CC BY-SA'
+    },
+    'kannada-wiktionary-short': {
+      'name': 'Kannada Short Words Wiktionary',
+      'description': 'Kannada Wiktionary Words -- CC BY-SA'
+    },
+    'kazakh-wiktionary': {
+      'name': 'Kazakh Wiktionary',
+      'description': 'Kazakh Wiktionary Words -- CC BY-SA'
+    },
+    'kazakh-wiktionary-short': {
+      'name': 'Kazakh Short Words Wiktionary',
+      'description': 'Kazakh Wiktionary Words -- CC BY-SA'
+    },
+    'khmer-wiktionary': {
+      'name': 'Khmer Wiktionary',
+      'description': 'Khmer Wiktionary Words -- CC BY-SA'
+    },
+    'khmer-wiktionary-short': {
+      'name': 'Khmer Short Words Wiktionary',
+      'description': 'Khmer Wiktionary Words -- CC BY-SA'
+    },
+    'korean-wiktionary': {
+      'name': 'Korean Wiktionary',
+      'description': 'Korean Wiktionary Words -- CC BY-SA'
+    },
+    'korean-wiktionary-short': {
+      'name': 'Korean Short Words Wiktionary',
+      'description': 'Korean Wiktionary Words -- CC BY-SA'
+    },
+    'kurdish-wiktionary': {
+      'name': 'Kurdish Wiktionary',
+      'description': 'Kurdish Wiktionary Words -- CC BY-SA'
+    },
+    'kurdish-wiktionary-short': {
+      'name': 'Kurdish Short Words Wiktionary',
+      'description': 'Kurdish Wiktionary Words -- CC BY-SA'
+    },
+    'kyrgyz-wiktionary': {
+      'name': 'Kyrgyz Wiktionary',
+      'description': 'Kyrgyz Wiktionary Words -- CC BY-SA'
+    },
+    'kyrgyz-wiktionary-short': {
+      'name': 'Kyrgyz Short Words Wiktionary',
+      'description': 'Kyrgyz Wiktionary Words -- CC BY-SA'
+    },
+    'lao-wiktionary': {
+      'name': 'Lao Wiktionary',
+      'description': 'Lao Wiktionary Words -- CC BY-SA'
+    },
+    'lao-wiktionary-short': {
+      'name': 'Lao Short Words Wiktionary',
+      'description': 'Lao Wiktionary Words -- CC BY-SA'
+    },
+    'latin-wiktionary': {
+      'name': 'Latin Wiktionary',
+      'description': 'Latin Wiktionary Words -- CC BY-SA'
+    },
+    'latin-wiktionary-short': {
+      'name': 'Latin Short Words Wiktionary',
+      'description': 'Latin Wiktionary Words -- CC BY-SA'
+    },
+    'latvian-wiktionary': {
+      'name': 'Latvian Wiktionary',
+      'description': 'Latvian Wiktionary Words -- CC BY-SA'
+    },
+    'latvian-wiktionary-short': {
+      'name': 'Latvian Short Words Wiktionary',
+      'description': 'Latvian Wiktionary Words -- CC BY-SA'
+    },
+    'limburgish-wiktionary': {
+      'name': 'Limburgish Wiktionary',
+      'description': 'Limburgish Wiktionary Words -- CC BY-SA'
+    },
+    'limburgish-wiktionary-short': {
+      'name': 'Limburgish Short Words Wiktionary',
+      'description': 'Limburgish Wiktionary Words -- CC BY-SA'
+    },
+    'lithuanian-wiktionary': {
+      'name': 'Lithuanian Wiktionary',
+      'description': 'Lithuanian Wiktionary Words -- CC BY-SA'
+    },
+    'lithuanian-wiktionary-short': {
+      'name': 'Lithuanian Short Words Wiktionary',
+      'description': 'Lithuanian Wiktionary Words -- CC BY-SA'
+    },
+    'luxembourgish-wiktionary': {
+      'name': 'Luxembourgish Wiktionary',
+      'description': 'Luxembourgish Wiktionary Words -- CC BY-SA'
+    },
+    'luxembourgish-wiktionary-short': {
+      'name': 'Luxembourgish Short Words Wiktionary',
+      'description': 'Luxembourgish Wiktionary Words -- CC BY-SA'
+    },
+    'macedonian-wiktionary': {
+      'name': 'Macedonian Wiktionary',
+      'description': 'Macedonian Wiktionary Words -- CC BY-SA'
+    },
+    'macedonian-wiktionary-short': {
+      'name': 'Macedonian Short Words Wiktionary',
+      'description': 'Macedonian Wiktionary Words -- CC BY-SA'
+    },
+    'malagasy-wiktionary': {
+      'name': 'Malagasy Wiktionary',
+      'description': 'Malagasy Wiktionary Words -- CC BY-SA'
+    },
+    'malagasy-wiktionary-short': {
+      'name': 'Malagasy Short Words Wiktionary',
+      'description': 'Malagasy Wiktionary Words -- CC BY-SA'
+    },
+    'malay-wiktionary': {
+      'name': 'Malay Wiktionary',
+      'description': 'Malay Wiktionary Words -- CC BY-SA'
+    },
+    'malay-wiktionary-short': {
+      'name': 'Malay Short Words Wiktionary',
+      'description': 'Malay Wiktionary Words -- CC BY-SA'
+    },
+    'malayalam-wiktionary': {
+      'name': 'Malayalam Wiktionary',
+      'description': 'Malayalam Wiktionary Words -- CC BY-SA'
+    },
+    'malayalam-wiktionary-short': {
+      'name': 'Malayalam Short Words Wiktionary',
+      'description': 'Malayalam Wiktionary Words -- CC BY-SA'
+    },
+    'maltese-wiktionary': {
+      'name': 'Maltese Wiktionary',
+      'description': 'Maltese Wiktionary Words -- CC BY-SA'
+    },
+    'maltese-wiktionary-short': {
+      'name': 'Maltese Short Words Wiktionary',
+      'description': 'Maltese Wiktionary Words -- CC BY-SA'
+    },
+    'manx-wiktionary': {
+      'name': 'Manx Wiktionary',
+      'description': 'Manx Wiktionary Words -- CC BY-SA'
+    },
+    'manx-wiktionary-short': {
+      'name': 'Manx Short Words Wiktionary',
+      'description': 'Manx Wiktionary Words -- CC BY-SA'
+    },
+    'maori-wiktionary': {
+      'name': 'Maori Wiktionary',
+      'description': 'Maori Wiktionary Words -- CC BY-SA'
+    },
+    'maori-wiktionary-short': {
+      'name': 'Maori Short Words Wiktionary',
+      'description': 'Maori Wiktionary Words -- CC BY-SA'
+    },
+    'marathi-wiktionary': {
+      'name': 'Marathi Wiktionary',
+      'description': 'Marathi Wiktionary Words -- CC BY-SA'
+    },
+    'marathi-wiktionary-short': {
+      'name': 'Marathi Short Words Wiktionary',
+      'description': 'Marathi Wiktionary Words -- CC BY-SA'
+    },
+    'marshallese-wiktionary': {
+      'name': 'Marshallese Wiktionary',
+      'description': 'Marshallese Wiktionary Words -- CC BY-SA'
+    },
+    'marshallese-wiktionary-short': {
+      'name': 'Marshallese Short Words Wiktionary',
+      'description': 'Marshallese Wiktionary Words -- CC BY-SA'
+    },
+    'mongolian-wiktionary': {
+      'name': 'Mongolian Wiktionary',
+      'description': 'Mongolian Wiktionary Words -- CC BY-SA'
+    },
+    'mongolian-wiktionary-short': {
+      'name': 'Mongolian Short Words Wiktionary',
+      'description': 'Mongolian Wiktionary Words -- CC BY-SA'
+    },
+    'navajo-wiktionary': {
+      'name': 'Navajo Wiktionary',
+      'description': 'Navajo Wiktionary Words -- CC BY-SA'
+    },
+    'navajo-wiktionary-short': {
+      'name': 'Navajo Short Words Wiktionary',
+      'description': 'Navajo Wiktionary Words -- CC BY-SA'
+    },
+    'norwegian-wiktionary': {
+      'name': 'Norwegian Wiktionary',
+      'description': 'Norwegian Wiktionary Words -- CC BY-SA'
+    },
+    'norwegian-wiktionary-short': {
+      'name': 'Norwegian Short Words Wiktionary',
+      'description': 'Norwegian Wiktionary Words -- CC BY-SA'
+    },
+    'occitan-wiktionary': {
+      'name': 'Occitan Wiktionary',
+      'description': 'Occitan Wiktionary Words -- CC BY-SA'
+    },
+    'occitan-wiktionary-short': {
+      'name': 'Occitan Short Words Wiktionary',
+      'description': 'Occitan Wiktionary Words -- CC BY-SA'
+    },
+    'ojibwe-wiktionary': {
+      'name': 'Ojibwe Wiktionary',
+      'description': 'Ojibwe Wiktionary Words -- CC BY-SA'
+    },
+    'ojibwe-wiktionary-short': {
+      'name': 'Ojibwe Short Words Wiktionary',
+      'description': 'Ojibwe Wiktionary Words -- CC BY-SA'
+    },
+    'ossetian-wiktionary': {
+      'name': 'Ossetian Wiktionary',
+      'description': 'Ossetian Wiktionary Words -- CC BY-SA'
+    },
+    'ossetian-wiktionary-short': {
+      'name': 'Ossetian Short Words Wiktionary',
+      'description': 'Ossetian Wiktionary Words -- CC BY-SA'
+    },
+    'pashto-wiktionary': {
+      'name': 'Pashto Wiktionary',
+      'description': 'Pashto Wiktionary Words -- CC BY-SA'
+    },
+    'pashto-wiktionary-short': {
+      'name': 'Pashto Short Words Wiktionary',
+      'description': 'Pashto Wiktionary Words -- CC BY-SA'
+    },
+    'persian-wiktionary': {
+      'name': 'Persian Wiktionary',
+      'description': 'Persian Wiktionary Words -- CC BY-SA'
+    },
+    'persian-wiktionary-short': {
+      'name': 'Persian Short Words Wiktionary',
+      'description': 'Persian Wiktionary Words -- CC BY-SA'
+    },
+    'polish-wiktionary': {
+      'name': 'Polish Wiktionary',
+      'description': 'Polish Wiktionary Words -- CC BY-SA'
+    },
+    'polish-wiktionary-short': {
+      'name': 'Polish Short Words Wiktionary',
+      'description': 'Polish Wiktionary Words -- CC BY-SA'
+    },
+    'portuguese-wiktionary': {
+      'name': 'Portuguese Wiktionary',
+      'description': 'Portuguese Wiktionary Words -- CC BY-SA'
+    },
+    'portuguese-wiktionary-short': {
+      'name': 'Portuguese Short Words Wiktionary',
+      'description': 'Portuguese Wiktionary Words -- CC BY-SA'
+    },
+    'punjabi-wiktionary': {
+      'name': 'Punjabi Wiktionary',
+      'description': 'Punjabi Wiktionary Words -- CC BY-SA'
+    },
+    'punjabi-wiktionary-short': {
+      'name': 'Punjabi Short Words Wiktionary',
+      'description': 'Punjabi Wiktionary Words -- CC BY-SA'
+    },
+    'quechua-wiktionary': {
+      'name': 'Quechua Wiktionary',
+      'description': 'Quechua Wiktionary Words -- CC BY-SA'
+    },
+    'quechua-wiktionary-short': {
+      'name': 'Quechua Short Words Wiktionary',
+      'description': 'Quechua Wiktionary Words -- CC BY-SA'
+    },
+    'romanian-wiktionary': {
+      'name': 'Romanian Wiktionary',
+      'description': 'Romanian Wiktionary Words -- CC BY-SA'
+    },
+    'romanian-wiktionary-short': {
+      'name': 'Romanian Short Words Wiktionary',
+      'description': 'Romanian Wiktionary Words -- CC BY-SA'
+    },
+    'romansch-wiktionary': {
+      'name': 'Romansch Wiktionary',
+      'description': 'Romansch Wiktionary Words -- CC BY-SA'
+    },
+    'romansch-wiktionary-short': {
+      'name': 'Romansch Short Words Wiktionary',
+      'description': 'Romansch Wiktionary Words -- CC BY-SA'
+    },
+    'russian-wiktionary': {
+      'name': 'Russian Wiktionary',
+      'description': 'Russian Wiktionary Words -- CC BY-SA'
+    },
+    'russian-wiktionary-short': {
+      'name': 'Russian Short Words Wiktionary',
+      'description': 'Russian Wiktionary Words -- CC BY-SA'
+    },
+    'sanskrit-wiktionary': {
+      'name': 'Sanskrit Wiktionary',
+      'description': 'Sanskrit Wiktionary Words -- CC BY-SA'
+    },
+    'sanskrit-wiktionary-short': {
+      'name': 'Sanskrit Short Words Wiktionary',
+      'description': 'Sanskrit Wiktionary Words -- CC BY-SA'
+    },
+    'serbo-croatian-wiktionary': {
+      'name': 'Serbo-Croatian Wiktionary',
+      'description': 'Serbo-Croatian Wiktionary Words -- CC BY-SA'
+    },
+    'serbo-croatian-wiktionary-short': {
+      'name': 'Serbo-Croatian Short Words Wiktionary',
+      'description': 'Serbo-Croatian Wiktionary Words -- CC BY-SA'
+    },
+    'sinhalese-wiktionary': {
+      'name': 'Sinhalese Wiktionary',
+      'description': 'Sinhalese Wiktionary Words -- CC BY-SA'
+    },
+    'sinhalese-wiktionary-short': {
+      'name': 'Sinhalese Short Words Wiktionary',
+      'description': 'Sinhalese Wiktionary Words -- CC BY-SA'
+    },
+    'slovak-wiktionary': {
+      'name': 'Slovak Wiktionary',
+      'description': 'Slovak Wiktionary Words -- CC BY-SA'
+    },
+    'slovak-wiktionary-short': {
+      'name': 'Slovak Short Words Wiktionary',
+      'description': 'Slovak Wiktionary Words -- CC BY-SA'
+    },
+    'slovene-wiktionary': {
+      'name': 'Slovene Wiktionary',
+      'description': 'Slovene Wiktionary Words -- CC BY-SA'
+    },
+    'slovene-wiktionary-short': {
+      'name': 'Slovene Short Words Wiktionary',
+      'description': 'Slovene Wiktionary Words -- CC BY-SA'
+    },
+    'spanish-wiktionary': {
+      'name': 'Spanish Wiktionary',
+      'description': 'Spanish Wiktionary Words -- CC BY-SA'
+    },
+    'spanish-wiktionary-short': {
+      'name': 'Spanish Short Words Wiktionary',
+      'description': 'Spanish Wiktionary Words -- CC BY-SA'
+    },
+    'swahili-wiktionary': {
+      'name': 'Swahili Wiktionary',
+      'description': 'Swahili Wiktionary Words -- CC BY-SA'
+    },
+    'swahili-wiktionary-short': {
+      'name': 'Swahili Short Words Wiktionary',
+      'description': 'Swahili Wiktionary Words -- CC BY-SA'
+    },
+    'swedish-wiktionary': {
+      'name': 'Swedish Wiktionary',
+      'description': 'Swedish Wiktionary Words -- CC BY-SA'
+    },
+    'swedish-wiktionary-short': {
+      'name': 'Swedish Short Words Wiktionary',
+      'description': 'Swedish Wiktionary Words -- CC BY-SA'
+    },
+    'tagalog-wiktionary': {
+      'name': 'Tagalog Wiktionary',
+      'description': 'Tagalog Wiktionary Words -- CC BY-SA'
+    },
+    'tagalog-wiktionary-short': {
+      'name': 'Tagalog Short Words Wiktionary',
+      'description': 'Tagalog Wiktionary Words -- CC BY-SA'
+    },
+    'tahitian-wiktionary': {
+      'name': 'Tahitian Wiktionary',
+      'description': 'Tahitian Wiktionary Words -- CC BY-SA'
+    },
+    'tahitian-wiktionary-short': {
+      'name': 'Tahitian Short Words Wiktionary',
+      'description': 'Tahitian Wiktionary Words -- CC BY-SA'
+    },
+    'tajik-wiktionary': {
+      'name': 'Tajik Wiktionary',
+      'description': 'Tajik Wiktionary Words -- CC BY-SA'
+    },
+    'tajik-wiktionary-short': {
+      'name': 'Tajik Short Words Wiktionary',
+      'description': 'Tajik Wiktionary Words -- CC BY-SA'
+    },
+    'tamil-wiktionary': {
+      'name': 'Tamil Wiktionary',
+      'description': 'Tamil Wiktionary Words -- CC BY-SA'
+    },
+    'tamil-wiktionary-short': {
+      'name': 'Tamil Short Words Wiktionary',
+      'description': 'Tamil Wiktionary Words -- CC BY-SA'
+    },
+    'tatar-wiktionary': {
+      'name': 'Tatar Wiktionary',
+      'description': 'Tatar Wiktionary Words -- CC BY-SA'
+    },
+    'tatar-wiktionary-short': {
+      'name': 'Tatar Short Words Wiktionary',
+      'description': 'Tatar Wiktionary Words -- CC BY-SA'
+    },
+    'telugu-wiktionary': {
+      'name': 'Telugu Wiktionary',
+      'description': 'Telugu Wiktionary Words -- CC BY-SA'
+    },
+    'telugu-wiktionary-short': {
+      'name': 'Telugu Short Words Wiktionary',
+      'description': 'Telugu Wiktionary Words -- CC BY-SA'
+    },
+    'thai-wiktionary': {
+      'name': 'Thai Wiktionary',
+      'description': 'Thai Wiktionary Words -- CC BY-SA'
+    },
+    'thai-wiktionary-short': {
+      'name': 'Thai Short Words Wiktionary',
+      'description': 'Thai Wiktionary Words -- CC BY-SA'
+    },
+    'tibetan-wiktionary': {
+      'name': 'Tibetan Wiktionary',
+      'description': 'Tibetan Wiktionary Words -- CC BY-SA'
+    },
+    'tibetan-wiktionary-short': {
+      'name': 'Tibetan Short Words Wiktionary',
+      'description': 'Tibetan Wiktionary Words -- CC BY-SA'
+    },
+    'tigrinya-wiktionary': {
+      'name': 'Tigrinya Wiktionary',
+      'description': 'Tigrinya Wiktionary Words -- CC BY-SA'
+    },
+    'tigrinya-wiktionary-short': {
+      'name': 'Tigrinya Short Words Wiktionary',
+      'description': 'Tigrinya Wiktionary Words -- CC BY-SA'
+    },
+    'turkish-wiktionary': {
+      'name': 'Turkish Wiktionary',
+      'description': 'Turkish Wiktionary Words -- CC BY-SA'
+    },
+    'turkish-wiktionary-short': {
+      'name': 'Turkish Short Words Wiktionary',
+      'description': 'Turkish Wiktionary Words -- CC BY-SA'
+    },
+    'turkmen-wiktionary': {
+      'name': 'Turkmen Wiktionary',
+      'description': 'Turkmen Wiktionary Words -- CC BY-SA'
+    },
+    'turkmen-wiktionary-short': {
+      'name': 'Turkmen Short Words Wiktionary',
+      'description': 'Turkmen Wiktionary Words -- CC BY-SA'
+    },
+    'ukrainian-wiktionary': {
+      'name': 'Ukrainian Wiktionary',
+      'description': 'Ukrainian Wiktionary Words -- CC BY-SA'
+    },
+    'ukrainian-wiktionary-short': {
+      'name': 'Ukrainian Short Words Wiktionary',
+      'description': 'Ukrainian Wiktionary Words -- CC BY-SA'
+    },
+    'urdu-wiktionary': {
+      'name': 'Urdu Wiktionary',
+      'description': 'Urdu Wiktionary Words -- CC BY-SA'
+    },
+    'urdu-wiktionary-short': {
+      'name': 'Urdu Short Words Wiktionary',
+      'description': 'Urdu Wiktionary Words -- CC BY-SA'
+    },
+    'uyghur-wiktionary': {
+      'name': 'Uyghur Wiktionary',
+      'description': 'Uyghur Wiktionary Words -- CC BY-SA'
+    },
+    'uyghur-wiktionary-short': {
+      'name': 'Uyghur Short Words Wiktionary',
+      'description': 'Uyghur Wiktionary Words -- CC BY-SA'
+    },
+    'uzbek-wiktionary': {
+      'name': 'Uzbek Wiktionary',
+      'description': 'Uzbek Wiktionary Words -- CC BY-SA'
+    },
+    'uzbek-wiktionary-short': {
+      'name': 'Uzbek Short Words Wiktionary',
+      'description': 'Uzbek Wiktionary Words -- CC BY-SA'
+    },
+    'vietnamese-wiktionary': {
+      'name': 'Vietnamese Wiktionary',
+      'description': 'Vietnamese Wiktionary Words -- CC BY-SA'
+    },
+    'vietnamese-wiktionary-short': {
+      'name': 'Vietnamese Short Words Wiktionary',
+      'description': 'Vietnamese Wiktionary Words -- CC BY-SA'
+    },
+    //'volapük-wiktionary': {
+    //  'name': 'Volapük Wiktionary',
+    //  'description': 'Volapük Wiktionary Words -- CC BY-SA'
     //},
-    //'Volapük-wiktionary-short': {
-    //  'name': 'Volapük-wiktionary-short Wiktionary',
-    //  'description': 'Volapük-wiktionary-short Wiktionary Words -- CC BY-SA'
+    //'volapük-wiktionary-short': {
+    //  'name': 'Volapük Short Words Wiktionary',
+    //  'description': 'Volapük Wiktionary Words -- CC BY-SA'
     //},
-    'Indonesian-wiktionary': {
-      'name': 'Indonesian-wiktionary Wiktionary',
-      'description': 'Indonesian-wiktionary Wiktionary Words -- CC BY-SA'
-    },
-    'Indonesian-wiktionary-short': {
-      'name': 'Indonesian-wiktionary-short Wiktionary',
-      'description': 'Indonesian-wiktionary-short Wiktionary Words -- CC BY-SA'
-    },
-    'Latin-wiktionary': {
-      'name': 'Latin-wiktionary Wiktionary',
-      'description': 'Latin-wiktionary Wiktionary Words -- CC BY-SA'
-    },
-    'Latin-wiktionary-short': {
-      'name': 'Latin-wiktionary-short Wiktionary',
-      'description': 'Latin-wiktionary-short Wiktionary Words -- CC BY-SA'
-    },
-    'Zulu-wiktionary': {
-      'name': 'Zulu-wiktionary Wiktionary',
-      'description': 'Zulu-wiktionary Wiktionary Words -- CC BY-SA'
-    },
-    'Zulu-wiktionary-short': {
-      'name': 'Zulu-wiktionary-short Wiktionary',
-      'description': 'Zulu-wiktionary-short Wiktionary Words -- CC BY-SA'
-    },
-    'Navajo-wiktionary': {
-      'name': 'Navajo-wiktionary Wiktionary',
-      'description': 'Navajo-wiktionary Wiktionary Words -- CC BY-SA'
-    },
-    'Navajo-wiktionary-short': {
-      'name': 'Navajo-wiktionary-short Wiktionary',
-      'description': 'Navajo-wiktionary-short Wiktionary Words -- CC BY-SA'
-    },
-    'Uzbek-wiktionary': {
-      'name': 'Uzbek-wiktionary Wiktionary',
-      'description': 'Uzbek-wiktionary Wiktionary Words -- CC BY-SA'
-    },
-    'Uzbek-wiktionary-short': {
-      'name': 'Uzbek-wiktionary-short Wiktionary',
-      'description': 'Uzbek-wiktionary-short Wiktionary Words -- CC BY-SA'
-    },
-    'Serbo-Croatian-wiktionary': {
-      'name': 'Serbo-Croatian-wiktionary Wiktionary',
-      'description': 'Serbo-Croatian-wiktionary Wiktionary Words -- CC BY-SA'
-    },
-    'Serbo-Croatian-wiktionary-short': {
-      'name': 'Serbo-Croatian-wiktionary-short Wiktionary',
-      'description': 'Serbo-Croatian-wiktionary-short Wiktionary Words -- CC BY-SA'
-    },
-    'Latvian-wiktionary': {
-      'name': 'Latvian-wiktionary Wiktionary',
-      'description': 'Latvian-wiktionary Wiktionary Words -- CC BY-SA'
-    },
-    'Latvian-wiktionary-short': {
-      'name': 'Latvian-wiktionary-short Wiktionary',
-      'description': 'Latvian-wiktionary-short Wiktionary Words -- CC BY-SA'
-    },
-    'English-wiktionary': {
-      'name': 'English-wiktionary Wiktionary',
-      'description': 'English-wiktionary Wiktionary Words -- CC BY-SA'
-    },
-    'English-wiktionary-short': {
-      'name': 'English-wiktionary-short Wiktionary',
-      'description': 'English-wiktionary-short Wiktionary Words -- CC BY-SA'
-    },
-    'Breton-wiktionary': {
-      'name': 'Breton-wiktionary Wiktionary',
-      'description': 'Breton-wiktionary Wiktionary Words -- CC BY-SA'
-    },
-    'Breton-wiktionary-short': {
-      'name': 'Breton-wiktionary-short Wiktionary',
-      'description': 'Breton-wiktionary-short Wiktionary Words -- CC BY-SA'
-    },
-    'Turkish-wiktionary': {
-      'name': 'Turkish-wiktionary Wiktionary',
-      'description': 'Turkish-wiktionary Wiktionary Words -- CC BY-SA'
-    },
-    'Turkish-wiktionary-short': {
-      'name': 'Turkish-wiktionary-short Wiktionary',
-      'description': 'Turkish-wiktionary-short Wiktionary Words -- CC BY-SA'
-    },
-    'Hungarian-wiktionary': {
-      'name': 'Hungarian-wiktionary Wiktionary',
-      'description': 'Hungarian-wiktionary Wiktionary Words -- CC BY-SA'
-    },
-    'Hungarian-wiktionary-short': {
-      'name': 'Hungarian-wiktionary-short Wiktionary',
-      'description': 'Hungarian-wiktionary-short Wiktionary Words -- CC BY-SA'
-    },
-    'Lithuanian-wiktionary': {
-      'name': 'Lithuanian-wiktionary Wiktionary',
-      'description': 'Lithuanian-wiktionary Wiktionary Words -- CC BY-SA'
-    },
-    'Lithuanian-wiktionary-short': {
-      'name': 'Lithuanian-wiktionary-short Wiktionary',
-      'description': 'Lithuanian-wiktionary-short Wiktionary Words -- CC BY-SA'
-    },
-    'Malay-wiktionary': {
-      'name': 'Malay-wiktionary Wiktionary',
-      'description': 'Malay-wiktionary Wiktionary Words -- CC BY-SA'
-    },
-    'Malay-wiktionary-short': {
-      'name': 'Malay-wiktionary-short Wiktionary',
-      'description': 'Malay-wiktionary-short Wiktionary Words -- CC BY-SA'
-    },
-    'German-wiktionary': {
-      'name': 'German-wiktionary Wiktionary',
-      'description': 'German-wiktionary Wiktionary Words -- CC BY-SA'
-    },
-    'German-wiktionary-short': {
-      'name': 'German-wiktionary-short Wiktionary',
-      'description': 'German-wiktionary-short Wiktionary Words -- CC BY-SA'
-    },
-    'Basque-wiktionary': {
-      'name': 'Basque-wiktionary Wiktionary',
-      'description': 'Basque-wiktionary Wiktionary Words -- CC BY-SA'
-    },
-    'Basque-wiktionary-short': {
-      'name': 'Basque-wiktionary-short Wiktionary',
-      'description': 'Basque-wiktionary-short Wiktionary Words -- CC BY-SA'
-    },
-    'Corsican-wiktionary': {
-      'name': 'Corsican-wiktionary Wiktionary',
-      'description': 'Corsican-wiktionary Wiktionary Words -- CC BY-SA'
-    },
-    'Corsican-wiktionary-short': {
-      'name': 'Corsican-wiktionary-short Wiktionary',
-      'description': 'Corsican-wiktionary-short Wiktionary Words -- CC BY-SA'
-    },
-    'Dutch-wiktionary': {
-      'name': 'Dutch-wiktionary Wiktionary',
-      'description': 'Dutch-wiktionary Wiktionary Words -- CC BY-SA'
-    },
-    'Dutch-wiktionary-short': {
-      'name': 'Dutch-wiktionary-short Wiktionary',
-      'description': 'Dutch-wiktionary-short Wiktionary Words -- CC BY-SA'
-    },
-    'Welsh-wiktionary': {
-      'name': 'Welsh-wiktionary Wiktionary',
-      'description': 'Welsh-wiktionary Wiktionary Words -- CC BY-SA'
-    },
-    'Welsh-wiktionary-short': {
-      'name': 'Welsh-wiktionary-short Wiktionary',
-      'description': 'Welsh-wiktionary-short Wiktionary Words -- CC BY-SA'
-    },
-    'Interlingua-wiktionary': {
-      'name': 'Interlingua-wiktionary Wiktionary',
-      'description': 'Interlingua-wiktionary Wiktionary Words -- CC BY-SA'
-    },
-    'Interlingua-wiktionary-short': {
-      'name': 'Interlingua-wiktionary-short Wiktionary',
-      'description': 'Interlingua-wiktionary-short Wiktionary Words -- CC BY-SA'
-    },
-    'Japanese-wiktionary': {
-      'name': 'Japanese-wiktionary Wiktionary',
-      'description': 'Japanese-wiktionary Wiktionary Words -- CC BY-SA'
-    },
-    'Japanese-wiktionary-short': {
-      'name': 'Japanese-wiktionary-short Wiktionary',
-      'description': 'Japanese-wiktionary-short Wiktionary Words -- CC BY-SA'
-    },
-    'Quechua-wiktionary': {
-      'name': 'Quechua-wiktionary Wiktionary',
-      'description': 'Quechua-wiktionary Wiktionary Words -- CC BY-SA'
-    },
-    'Quechua-wiktionary-short': {
-      'name': 'Quechua-wiktionary-short Wiktionary',
-      'description': 'Quechua-wiktionary-short Wiktionary Words -- CC BY-SA'
-    },
-    'Esperanto-wiktionary': {
-      'name': 'Esperanto-wiktionary Wiktionary',
-      'description': 'Esperanto-wiktionary Wiktionary Words -- CC BY-SA'
-    },
-    'Esperanto-wiktionary-short': {
-      'name': 'Esperanto-wiktionary-short Wiktionary',
-      'description': 'Esperanto-wiktionary-short Wiktionary Words -- CC BY-SA'
-    },
-    'Estonian-wiktionary': {
-      'name': 'Estonian-wiktionary Wiktionary',
-      'description': 'Estonian-wiktionary Wiktionary Words -- CC BY-SA'
-    },
-    'Estonian-wiktionary-short': {
-      'name': 'Estonian-wiktionary-short Wiktionary',
-      'description': 'Estonian-wiktionary-short Wiktionary Words -- CC BY-SA'
-    },
-    'Azeri-wiktionary': {
-      'name': 'Azeri-wiktionary Wiktionary',
-      'description': 'Azeri-wiktionary Wiktionary Words -- CC BY-SA'
-    },
-    'Azeri-wiktionary-short': {
-      'name': 'Azeri-wiktionary-short Wiktionary',
-      'description': 'Azeri-wiktionary-short Wiktionary Words -- CC BY-SA'
-    },
-    'Manx-wiktionary': {
-      'name': 'Manx-wiktionary Wiktionary',
-      'description': 'Manx-wiktionary Wiktionary Words -- CC BY-SA'
-    },
-    'Manx-wiktionary-short': {
-      'name': 'Manx-wiktionary-short Wiktionary',
-      'description': 'Manx-wiktionary-short Wiktionary Words -- CC BY-SA'
-    },
-    'Walloon-wiktionary': {
-      'name': 'Walloon-wiktionary Wiktionary',
-      'description': 'Walloon-wiktionary Wiktionary Words -- CC BY-SA'
-    },
-    'Walloon-wiktionary-short': {
-      'name': 'Walloon-wiktionary-short Wiktionary',
-      'description': 'Walloon-wiktionary-short Wiktionary Words -- CC BY-SA'
-    },
-    'Romansch-wiktionary': {
-      'name': 'Romansch-wiktionary Wiktionary',
-      'description': 'Romansch-wiktionary Wiktionary Words -- CC BY-SA'
-    },
-    'Romansch-wiktionary-short': {
-      'name': 'Romansch-wiktionary-short Wiktionary',
-      'description': 'Romansch-wiktionary-short Wiktionary Words -- CC BY-SA'
-    },
-    'Galician-wiktionary': {
-      'name': 'Galician-wiktionary Wiktionary',
-      'description': 'Galician-wiktionary Wiktionary Words -- CC BY-SA'
-    },
-    'Galician-wiktionary-short': {
-      'name': 'Galician-wiktionary-short Wiktionary',
-      'description': 'Galician-wiktionary-short Wiktionary Words -- CC BY-SA'
-    },
-    'Slovak-wiktionary': {
-      'name': 'Slovak-wiktionary Wiktionary',
-      'description': 'Slovak-wiktionary Wiktionary Words -- CC BY-SA'
-    },
-    'Slovak-wiktionary-short': {
-      'name': 'Slovak-wiktionary-short Wiktionary',
-      'description': 'Slovak-wiktionary-short Wiktionary Words -- CC BY-SA'
-    },
-    'Polish-wiktionary': {
-      'name': 'Polish-wiktionary Wiktionary',
-      'description': 'Polish-wiktionary Wiktionary Words -- CC BY-SA'
-    },
-    'Polish-wiktionary-short': {
-      'name': 'Polish-wiktionary-short Wiktionary',
-      'description': 'Polish-wiktionary-short Wiktionary Words -- CC BY-SA'
-    },
-    'Ewe-wiktionary': {
-      'name': 'Ewe-wiktionary Wiktionary',
-      'description': 'Ewe-wiktionary Wiktionary Words -- CC BY-SA'
-    },
-    'Ewe-wiktionary-short': {
-      'name': 'Ewe-wiktionary-short Wiktionary',
-      'description': 'Ewe-wiktionary-short Wiktionary Words -- CC BY-SA'
-    },
-    'Faroese-wiktionary': {
-      'name': 'Faroese-wiktionary Wiktionary',
-      'description': 'Faroese-wiktionary Wiktionary Words -- CC BY-SA'
-    },
-    'Faroese-wiktionary-short': {
-      'name': 'Faroese-wiktionary-short Wiktionary',
-      'description': 'Faroese-wiktionary-short Wiktionary Words -- CC BY-SA'
-    },
-    'Danish-wiktionary': {
-      'name': 'Danish-wiktionary Wiktionary',
-      'description': 'Danish-wiktionary Wiktionary Words -- CC BY-SA'
-    },
-    'Danish-wiktionary-short': {
-      'name': 'Danish-wiktionary-short Wiktionary',
-      'description': 'Danish-wiktionary-short Wiktionary Words -- CC BY-SA'
-    },
-    'Norwegian-wiktionary': {
-      'name': 'Norwegian-wiktionary Wiktionary',
-      'description': 'Norwegian-wiktionary Wiktionary Words -- CC BY-SA'
-    },
-    'Norwegian-wiktionary-short': {
-      'name': 'Norwegian-wiktionary-short Wiktionary',
-      'description': 'Norwegian-wiktionary-short Wiktionary Words -- CC BY-SA'
-    },
-    'Aragonese-wiktionary': {
-      'name': 'Aragonese-wiktionary Wiktionary',
-      'description': 'Aragonese-wiktionary Wiktionary Words -- CC BY-SA'
-    },
-    'Aragonese-wiktionary-short': {
-      'name': 'Aragonese-wiktionary-short Wiktionary',
-      'description': 'Aragonese-wiktionary-short Wiktionary Words -- CC BY-SA'
-    },
-    'Slovene-wiktionary': {
-      'name': 'Slovene-wiktionary Wiktionary',
-      'description': 'Slovene-wiktionary Wiktionary Words -- CC BY-SA'
-    },
-    'Slovene-wiktionary-short': {
-      'name': 'Slovene-wiktionary-short Wiktionary',
-      'description': 'Slovene-wiktionary-short Wiktionary Words -- CC BY-SA'
-    },
-    'Swahili-wiktionary': {
-      'name': 'Swahili-wiktionary Wiktionary',
-      'description': 'Swahili-wiktionary Wiktionary Words -- CC BY-SA'
-    },
-    'Swahili-wiktionary-short': {
-      'name': 'Swahili-wiktionary-short Wiktionary',
-      'description': 'Swahili-wiktionary-short Wiktionary Words -- CC BY-SA'
-    },
-    'Swedish-wiktionary': {
-      'name': 'Swedish-wiktionary Wiktionary',
-      'description': 'Swedish-wiktionary Wiktionary Words -- CC BY-SA'
-    },
-    'Swedish-wiktionary-short': {
-      'name': 'Swedish-wiktionary-short Wiktionary',
-      'description': 'Swedish-wiktionary-short Wiktionary Words -- CC BY-SA'
-    },
-    'Icelandic-wiktionary': {
-      'name': 'Icelandic-wiktionary Wiktionary',
-      'description': 'Icelandic-wiktionary Wiktionary Words -- CC BY-SA'
-    },
-    'Icelandic-wiktionary-short': {
-      'name': 'Icelandic-wiktionary-short Wiktionary',
-      'description': 'Icelandic-wiktionary-short Wiktionary Words -- CC BY-SA'
-    },
-    'Greenlandic-wiktionary': {
-      'name': 'Greenlandic-wiktionary Wiktionary',
-      'description': 'Greenlandic-wiktionary Wiktionary Words -- CC BY-SA'
-    },
-    'Greenlandic-wiktionary-short': {
-      'name': 'Greenlandic-wiktionary-short Wiktionary',
-      'description': 'Greenlandic-wiktionary-short Wiktionary Words -- CC BY-SA'
-    },
-    'Malagasy-wiktionary': {
-      'name': 'Malagasy-wiktionary Wiktionary',
-      'description': 'Malagasy-wiktionary Wiktionary Words -- CC BY-SA'
-    },
-    'Malagasy-wiktionary-short': {
-      'name': 'Malagasy-wiktionary-short Wiktionary',
-      'description': 'Malagasy-wiktionary-short Wiktionary Words -- CC BY-SA'
-    },
-    'Catalan-wiktionary': {
-      'name': 'Catalan-wiktionary Wiktionary',
-      'description': 'Catalan-wiktionary Wiktionary Words -- CC BY-SA'
-    },
-    'Catalan-wiktionary-short': {
-      'name': 'Catalan-wiktionary-short Wiktionary',
-      'description': 'Catalan-wiktionary-short Wiktionary Words -- CC BY-SA'
-    },
-    'Luxembourgish-wiktionary': {
-      'name': 'Luxembourgish-wiktionary Wiktionary',
-      'description': 'Luxembourgish-wiktionary Wiktionary Words -- CC BY-SA'
-    },
-    'Luxembourgish-wiktionary-short': {
-      'name': 'Luxembourgish-wiktionary-short Wiktionary',
-      'description': 'Luxembourgish-wiktionary-short Wiktionary Words -- CC BY-SA'
-    },
-    'Hausa-wiktionary': {
-      'name': 'Hausa-wiktionary Wiktionary',
-      'description': 'Hausa-wiktionary Wiktionary Words -- CC BY-SA'
-    },
-    'Hausa-wiktionary-short': {
-      'name': 'Hausa-wiktionary-short Wiktionary',
-      'description': 'Hausa-wiktionary-short Wiktionary Words -- CC BY-SA'
-    },
-    'Irish-wiktionary': {
-      'name': 'Irish-wiktionary Wiktionary',
-      'description': 'Irish-wiktionary Wiktionary Words -- CC BY-SA'
-    },
-    'Irish-wiktionary-short': {
-      'name': 'Irish-wiktionary-short Wiktionary',
-      'description': 'Irish-wiktionary-short Wiktionary Words -- CC BY-SA'
-    },
-    'Czech-wiktionary': {
-      'name': 'Czech-wiktionary Wiktionary',
-      'description': 'Czech-wiktionary Wiktionary Words -- CC BY-SA'
-    },
-    'Czech-wiktionary-short': {
-      'name': 'Czech-wiktionary-short Wiktionary',
-      'description': 'Czech-wiktionary-short Wiktionary Words -- CC BY-SA'
-    },
-    'Romanian-wiktionary': {
-      'name': 'Romanian-wiktionary Wiktionary',
-      'description': 'Romanian-wiktionary Wiktionary Words -- CC BY-SA'
-    },
-    'Romanian-wiktionary-short': {
-      'name': 'Romanian-wiktionary-short Wiktionary',
-      'description': 'Romanian-wiktionary-short Wiktionary Words -- CC BY-SA'
-    },
-    'Limburgish-wiktionary': {
-      'name': 'Limburgish-wiktionary Wiktionary',
-      'description': 'Limburgish-wiktionary Wiktionary Words -- CC BY-SA'
-    },
-    'Limburgish-wiktionary-short': {
-      'name': 'Limburgish-wiktionary-short Wiktionary',
-      'description': 'Limburgish-wiktionary-short Wiktionary Words -- CC BY-SA'
-    },
-    'Maltese-wiktionary': {
-      'name': 'Maltese-wiktionary Wiktionary',
-      'description': 'Maltese-wiktionary Wiktionary Words -- CC BY-SA'
-    },
-    'Maltese-wiktionary-short': {
-      'name': 'Maltese-wiktionary-short Wiktionary',
-      'description': 'Maltese-wiktionary-short Wiktionary Words -- CC BY-SA'
-    },
-    'Ojibwe-wiktionary': {
-      'name': 'Ojibwe-wiktionary Wiktionary',
-      'description': 'Ojibwe-wiktionary Wiktionary Words -- CC BY-SA'
-    },
-    'Ojibwe-wiktionary-short': {
-      'name': 'Ojibwe-wiktionary-short Wiktionary',
-      'description': 'Ojibwe-wiktionary-short Wiktionary Words -- CC BY-SA'
-    },
-    'Kurdish-wiktionary': {
-      'name': 'Kurdish-wiktionary Wiktionary',
-      'description': 'Kurdish-wiktionary Wiktionary Words -- CC BY-SA'
-    },
-    'Kurdish-wiktionary-short': {
-      'name': 'Kurdish-wiktionary-short Wiktionary',
-      'description': 'Kurdish-wiktionary-short Wiktionary Words -- CC BY-SA'
-    },
-    'Ido-wiktionary': {
-      'name': 'Ido-wiktionary Wiktionary',
-      'description': 'Ido-wiktionary Wiktionary Words -- CC BY-SA'
-    },
-    'Ido-wiktionary-short': {
-      'name': 'Ido-wiktionary-short Wiktionary',
-      'description': 'Ido-wiktionary-short Wiktionary Words -- CC BY-SA'
-    },
-    'Portuguese-wiktionary': {
-      'name': 'Portuguese-wiktionary Wiktionary',
-      'description': 'Portuguese-wiktionary Wiktionary Words -- CC BY-SA'
-    },
-    'Portuguese-wiktionary-short': {
-      'name': 'Portuguese-wiktionary-short Wiktionary',
-      'description': 'Portuguese-wiktionary-short Wiktionary Words -- CC BY-SA'
-    },
-    'Spanish-wiktionary': {
-      'name': 'Spanish-wiktionary Wiktionary',
-      'description': 'Spanish-wiktionary Wiktionary Words -- CC BY-SA'
-    },
-    'Spanish-wiktionary-short': {
-      'name': 'Spanish-wiktionary-short Wiktionary',
-      'description': 'Spanish-wiktionary-short Wiktionary Words -- CC BY-SA'
+    'walloon-wiktionary': {
+      'name': 'Walloon Wiktionary',
+      'description': 'Walloon Wiktionary Words -- CC BY-SA'
+    },
+    'walloon-wiktionary-short': {
+      'name': 'Walloon Short Words Wiktionary',
+      'description': 'Walloon Wiktionary Words -- CC BY-SA'
+    },
+    'welsh-wiktionary': {
+      'name': 'Welsh Wiktionary',
+      'description': 'Welsh Wiktionary Words -- CC BY-SA'
+    },
+    'welsh-wiktionary-short': {
+      'name': 'Welsh Short Words Wiktionary',
+      'description': 'Welsh Wiktionary Words -- CC BY-SA'
+    },
+    'yiddish-wiktionary': {
+      'name': 'Yiddish Wiktionary',
+      'description': 'Yiddish Wiktionary Words -- CC BY-SA'
+    },
+    'yiddish-wiktionary-short': {
+      'name': 'Yiddish Short Words Wiktionary',
+      'description': 'Yiddish Wiktionary Words -- CC BY-SA'
+    },
+    'yoruba-wiktionary': {
+      'name': 'Yoruba Wiktionary',
+      'description': 'Yoruba Wiktionary Words -- CC BY-SA'
+    },
+    'yoruba-wiktionary-short': {
+      'name': 'Yoruba Short Words Wiktionary',
+      'description': 'Yoruba Wiktionary Words -- CC BY-SA'
+    },
+    'zulu-wiktionary': {
+      'name': 'Zulu Wiktionary',
+      'description': 'Zulu Wiktionary Words -- CC BY-SA'
+    },
+    'zulu-wiktionary-short': {
+      'name': 'Zulu Short Words Wiktionary',
+      'description': 'Zulu Wiktionary Words -- CC BY-SA'
     },
   };
 
