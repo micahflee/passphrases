@@ -9,7 +9,7 @@ Executables for Linux, OS X and Win32 are available under Releases.
 <br />Passphrases on OS X
 <p>&nbsp;</p>
 <img src ="https://raw.github.com/StephenGenusa/passphrases/master/japanese-wikitionary.png">
-<br />Japanese Example
+<br />Multi-language Support
 <p>&nbsp;</p>
 <img src ="https://raw.github.com/StephenGenusa/passphrases/master/partial-language-menu.png">
 <br />Partial Language Menu
