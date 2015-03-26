@@ -138,26 +138,46 @@ $(function(){
 
     // calculate average time to guess at 1 trillion guesses/sec
     var keyspace = Math.pow(wordlistCount, selectedWords);
-    var guessesPerSecond = 1000000000;
+    var guessesPerSecond = 1000000000000;
     var seconds = (keyspace / 2) / guessesPerSecond;
-    var years = seconds /  60 / 60 / 24 / 365;
 
     var val, unit;
-    if(years >= 1000000000000000) {
-      val = years / 1000000000000000;
-      unit = 'trillion years';
-    } else if(years >= 1000000000000) {
-      val = years / 1000000000000;
-      unit = 'billion years';
-    } else if(years >= 1000000000) {
-      val = years / 1000000000;
-      unit = 'million years';
-    } else if(years >= 1000000) {
-      val = years / 1000000;
-      unit = 'thousand years';
-    } else {
-      val = years;
+    if(seconds < 60) {
+      val = seconds;
+      unit = 'seconds';
+    } else if(seconds < 60 * 60) {
+      val = seconds / 60;
+      unit = 'minutes';
+    } else if(seconds < 60 * 60 * 24) {
+      val = seconds / 60 / 60;
+      unit = 'hours';
+    } else if(seconds < 60 * 60 * 24 * 30) {
+      val = seconds / 60 / 60 / 24;
+      unit = 'days';
+    } else if(seconds < 60 * 60 * 24 * 365) {
+      val = seconds / 60 / 60 / 24 / 29.6;
+      unit = 'months';
+    } else if(seconds < 60 * 60 * 24 * 365 * 1000) {
+      val = seconds / 60 / 60 / 24 / 365;
       unit = 'years';
+    } else if(seconds < 60 * 60 * 24 * 365 * 1000000) {
+      val = seconds / 60 / 60 / 24 / 365 / 1000;
+      unit = 'thousand years';
+    } else if(seconds < 60 * 60 * 24 * 365 * 1000000000) {
+      val = seconds / 60 / 60 / 24 / 365 / 1000000;
+      unit = 'million years';
+    } else if(seconds < 60 * 60 * 24 * 365 * 1000000000000) {
+      val = seconds / 60 / 60 / 24 / 365 / 1000000000;
+      unit = 'billion years';
+    } else if(seconds < 60 * 60 * 24 * 365 * 1000000000000000) {
+      val = seconds / 60 / 60 / 24 / 365 / 1000000000000;
+      unit = 'trillion years';
+    } else if(seconds < 60 * 60 * 24 * 365 * 1000000000000000000) {
+      val = seconds / 60 / 60 / 24 / 365 / 1000000000000000;
+      unit = 'quadrillion years';
+    } else {
+      val = seconds / 60 / 60 / 24 / 365 / 1000000000000000000;
+      unit = 'quintillion years';
     }
 
     $('.wordlist-description').html(
