@@ -7,11 +7,11 @@
     "icon": "./images/icon.png",
     "toolbar": false,
     "width": 600,
-    "height": 300,
+    "height": 325,
     "min_width": 600,
-    "min_height": 300,
+    "min_height": 325,
     "max_width": 600,
-    "max_height": 300
+    "max_height": 350
   },
   "version": "0.1.0",
   "dependencies": {

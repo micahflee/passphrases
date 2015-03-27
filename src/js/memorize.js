@@ -47,6 +47,12 @@ $(function(){
   $('.button-start-memorizing').click(function(){
     $('.memorize-input-form').submit();
   });
+  $('.button-copy-passphrase').click(function(){
+    var passphrase = $('.passphrase').text();
+    Passphrases.tabMemorize();
+    Passphrases.memorizeStart(passphrase);
+  });
+
 
   // start memorizing
   function startMemorizing(passphrase) {
