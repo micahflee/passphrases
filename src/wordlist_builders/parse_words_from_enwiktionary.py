@@ -1,14 +1,14 @@
 #!/usr/bin/env python
 
 """
-Creates [language]-wiktionary.wordlist and [language]-wiktionary-short.wordlist
-for each of the languages shown in the dicts dictionary below. The purpose is
+Creates [language]-wiktionary.wordlist and [language]-wiktionary-short.wordlist 
+for each of the languages shown in the dicts dictionary below. The purpose is 
 to seed the passphrase project with a large selection of language dictionaries
 that users can choose from when generating a new passphrase. This is for
 
 https://github.com/StephenGenusa/passphrases
 
-which is a fork of
+which is a fork of 
 
 https://github.com/micahflee/passphrases
 
@@ -105,12 +105,13 @@ def randomize_list(the_list):
 def main():
     global dicts
     wordcount = 0
-    # Since my XML pages may or may not be syntatically correct for XML
-    # parsing -- rather than face that battle -- I use a few regular
+    # Since my XML pages may or may not be syntactically correct for XML 
+    # parsing -- rather than face that battle -- I use a few regular 
     # expressions to pick out the information I need.
-    # Once an entire file has been parsed, the entire dict of languages and
+    #
+    # Once an entire file has been parsed, the entire dict of languages and 
     # words is saved to a pickled file so that I don't have to reparse all of
-    # the XML when I make minor changes to the post-XML parsing phase of
+    # the XML when I make minor changes to the post-XML parsing phase of 
     # the code.
     #
     # If the pickled dictionary file does not exist parse the XML
@@ -142,40 +143,40 @@ def main():
             else:
                 word = None
                 x_id = None
-
-
-            if x_id == '0' and language in dicts:
+        
+        
+            if x_id == '0' and language in dicts:    
                 wordcount += 1
                 print word, language, wordcount
                 if word not in dicts[language]:
                     dicts[language].append(word)
             lines = getNextXMLBlock()
-        f.close()
-        pickle.dump(dicts, open(wiki_dict_pickled_file, 'wb'))
+        f.close()    
+        pickle.dump(dicts, open(wiki_dict_pickled_file, 'wb'))    
     else:
         print "Loading dictionaries"
         dicts = pickle.load(open(wiki_dict_pickled_file, 'rb'))
         print "Done loading dictionaries"
-
-
-    # setup the template text for the JavaScript dictionary entries
+        
+        
+    # setup the template text for the JavaScript dictionary entries 
     js_dict_descriptors = ''
     dict_template = Template("""    '$dict': {
-        'name': '$dictname Wiktionary',
+        'name': '$dictname Short-Word Wiktionary',
         'description': '$dictname Wiktionary Words -- CC BY-SA'
         },
     """)
-
+    
     # make sure the output path exists
     output_path = os.path.join(os.getcwd(), "WordList Files")
     if not os.path.exists(output_path):
         os.mkdir(output_path)
     # get the dicts in alphabetical order
     for dict in sorted(dicts.iterkeys()):
-        if len(dicts[dict]) > 100:
+        if len(dicts[dict]) > 100: 
             print "Preparing to save", dict, "language words"
-            # //randomize the list before saving it
-            # //rand_word_list = randomize_list(dicts[dict])
+            # randomize the list before saving it  
+            #rand_word_list = randomize_list(dicts[dict])
             # save two version for each language: a list with all words and a short-word list
             print "Saving", dict, "language words"
             f_long = codecs.open(os.path.join(output_path, dict.lower() + '-wiktionary.wordlist'), "w", encoding='utf-8')
@@ -186,13 +187,13 @@ def main():
                 f_long.write(word + '\n')
                 if len(word) < 8:
                     f_short.write(word + '\n')
-            # close the files
+            # close the files        
             f_long.close()
             f_short.close()
             print "Preparing JavaScript code for", dict, "dictionary"
             # Save the templated dictionary descriptors to put into generate.js
             js_dict_descriptors += dict_template.substitute(dict=dict.lower() + '-wiktionary', dictname=dict)
-            js_dict_descriptors += dict_template.substitute(dict=dict.lower() + '-wiktionary-short', dictname=dict + " Short-Word ")
+            js_dict_descriptors += dict_template.substitute(dict=dict.lower() + '-wiktionary-short', dictname=dict)
     print js_dict_descriptors
 
 
