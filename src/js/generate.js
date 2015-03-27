@@ -30,7 +30,7 @@ $(function(){
   var wordlists = {
     'securedrop': {
       'name': 'SecureDrop',
-      'description': 'English wordlist used for generating SecureDrop code names'
+      'description': 'English wordlist from the SecureDrop project'
     },
     'english-diceware': {
       'name': 'English Diceware',
@@ -134,7 +134,8 @@ $(function(){
       wordlistCount = wordlists[selectedWordlist].count;
 
     // calculate entropy
-    var bitsOfEntropy = Math.log2(wordlistCount) * selectedWords;
+    var bitsOfEntropyPerWord = Math.log2(wordlistCount);
+    var bitsOfEntropy = bitsOfEntropyPerWord * selectedWords;
 
     // calculate average time to guess at 1 trillion guesses/sec
     var keyspace = Math.pow(wordlistCount, selectedWords);
@@ -181,8 +182,9 @@ $(function(){
     }
 
     $('.wordlist-description').html(
-      wordlists[selectedWordlist].description + '<br/>' +
-      Math.round(bitsOfEntropy * 100) / 100 + ' bits of entropy with ' + selectedWords + ' words in passphrase<br/>' +
+      '<strong>' + wordlists[selectedWordlist].description + '</strong><br/>' +
+      wordlistCount + ' words, ' + Math.round(bitsOfEntropyPerWord * 100) / 100 + ' bits of entropy per word<br/>' +
+      Math.round(bitsOfEntropy * 100) / 100 + ' bits of entropy with ' + selectedWords + ' words<br/>' +
       Math.round(val * 10) / 10 + ' ' + unit + ' average at one trillion guesses per second'
     );
   }

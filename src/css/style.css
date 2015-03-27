@@ -54,19 +54,29 @@ a {
 .content.active {
   display: block;
 }
-.generate-options {
-  float: left;
+
+.generate-top {
   text-align: center;
+  vertical-align: middle;
+}
+.generate-options {
+  display: inline-block;
+  text-align: left;
+  width: 160px;
+  vertical-align: top;
+  padding: 20px 0;
 }
 .wordlist-description {
+  display: inline-block;
+  text-align: left;
   color: #666666;
-  font-style: italic;
-  font-size: 14px;
-  text-align: center;
+  font-size: 12px;
+  width: 380px;
+  vertical-align: top;
 }
 
 .passphrase-wrapper {
-  margin: 20px 0;
+  margin: 10px 0;
   background-color: #ffffff;
   padding: 5px;
   border: 1px solid #999999;
