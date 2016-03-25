@@ -68,6 +68,10 @@ $(function(){
       'name': 'Svensk Diceware',
       'description': 'Svensk ordbok av Magnus Bodin'
     },
+    'portuguese-br-diceware': {
+      'name': 'Português (Brasil) Diceware',
+      'description': 'Lista de palavras em português feita por Augusto Carvalho, baseada em dicionário Ipsell da IME/USP'
+    },
   };
 
   var wordlistCount = 0;
